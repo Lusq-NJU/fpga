@@ -1,0 +1,29 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/software/vivado/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto fc690c09b58f49eea872a7d96f77e39b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fifo_2_9_tb_behav xil_defaultlib.fifo_2_9_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'dout' [D:/coding/verilog/xc7k70t/project_fifo/project_fifo.srcs/sim_1/new/fifo_2_9_tb.v:55]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'dout_chan' [D:/coding/verilog/xc7k70t/project_fifo/project_fifo.srcs/sim_1/new/fifo_2_9_tb.v:59]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'din' [D:/coding/verilog/xc7k70t/project_fifo/project_fifo.srcs/sources_1/new/fifo_2_9.v:55]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'din' [D:/coding/verilog/xc7k70t/project_fifo/project_fifo.srcs/sources_1/new/fifo_2_9.v:102]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'din' [D:/coding/verilog/xc7k70t/project_fifo/project_fifo.srcs/sources_1/new/fifo_2_9.v:149]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'din' [D:/coding/verilog/xc7k70t/project_fifo/project_fifo.srcs/sources_1/new/fifo_2_9.v:196]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.fifo_10x512_fwft_sync
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module xil_defaultlib.fifo_1x32_standard_sync
+Compiling module xil_defaultlib.fifo_2_9
+Compiling module xil_defaultlib.fifo_2_9_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fifo_2_9_tb_behav
