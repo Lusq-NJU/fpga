@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:34:12 2026
+# Process ID: 8864
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_2.log -mode tcl -source {xsim.dir/chk_fifo_2_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_2_snap/xsim_script.tcl
+# xsim {chk_fifo_2_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+--------------------------------------------------
+fifo_2_2 : written = 247, output beats = 222
+fifo_2_2 : occupancy still inside FIFO at end = 25
+fifo_2_2 : cfg_thd_0=20 cfg_thd_1=30
+NOTE: written (247) != observed (222) -> bytes stranded below the high watermark
+RESULT fifo_2_2: PASS (in-order, lossless, hysteresis readout)
+--------------------------------------------------
+$finish called at time : 24 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_2.v" Line 63
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:34:14 2026...

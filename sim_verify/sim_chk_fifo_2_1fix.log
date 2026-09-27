@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:34:05 2026
+# Process ID: 12472
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_1fix.log -mode tcl -source {xsim.dir/chk_fifo_2_1fix_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_1fix.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_1fix_snap/xsim_script.tcl
+# xsim {chk_fifo_2_1fix_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+--------------------------------------------------
+fifo_2_1(PATCHED) : written = 200, output beats = 101
+NOTE: written (200) != observed (101) -> loss or extra
+RESULT fifo_2_1(PATCHED): PASS (in-order, lossless, dout_vld aligned)
+--------------------------------------------------
+$finish called at time : 12 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_1fix.v" Line 67
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:34:07 2026...

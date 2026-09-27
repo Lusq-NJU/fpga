@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:22:12 2026
+# Process ID: 20868
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_dbg_ip_async.log -mode tcl -source {xsim.dir/dbg_ip_async_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_dbg_ip_async.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dbg_ip_async_snap/xsim_script.tcl
+# xsim {dbg_ip_async_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+  t=390000 empty=1 dout=000 rd_en=0
+  t=402000 empty=1 dout=000 rd_en=0
+  t=414000 empty=1 dout=000 rd_en=0
+  t=426000 empty=1 dout=000 rd_en=0
+  t=438000 empty=1 dout=000 rd_en=0
+  t=450000 empty=1 dout=000 rd_en=0
+  t=462000 empty=1 dout=000 rd_en=0
+  t=474000 empty=1 dout=000 rd_en=0
+  t=486000 empty=1 dout=000 rd_en=0
+  t=498000 empty=1 dout=000 rd_en=0
+  t=510000 empty=1 dout=000 rd_en=0
+  t=522000 empty=1 dout=000 rd_en=0
+  t=534000 empty=1 dout=000 rd_en=0
+  t=546000 empty=1 dout=000 rd_en=0
+  t=558000 empty=1 dout=000 rd_en=0
+  t=570000 empty=1 dout=000 rd_en=0
+  t=582000 empty=1 dout=000 rd_en=0
+  t=594000 empty=1 dout=000 rd_en=0
+  t=606000 empty=1 dout=000 rd_en=0
+  t=618000 empty=1 dout=000 rd_en=0
+  t=630000 empty=1 dout=000 rd_en=0
+  t=642000 empty=1 dout=000 rd_en=0
+  t=654000 empty=1 dout=000 rd_en=0
+  t=666000 empty=1 dout=000 rd_en=0
+  t=678000 empty=1 dout=000 rd_en=0
+  t=690000 empty=1 dout=000 rd_en=0
+  t=702000 empty=1 dout=000 rd_en=0
+  t=714000 empty=1 dout=000 rd_en=0
+  t=726000 empty=0 dout=104 rd_en=1
+ERROR t=726000: beat #0 got 104 expected 100
+  t=738000 empty=1 dout=104 rd_en=0
+  t=750000 empty=1 dout=104 rd_en=0
+  t=762000 empty=1 dout=104 rd_en=0
+  t=774000 empty=0 dout=105 rd_en=1
+ERROR t=774000: beat #1 got 105 expected 101
+  t=786000 empty=1 dout=105 rd_en=0
+  t=798000 empty=1 dout=105 rd_en=0
+--------------------------------------------------
+dbg_ip_async: expected 6 words, read 2
+RESULT dbg_ip_async: FAIL (2 error(s), 2 beats)
+--------------------------------------------------
+$finish called at time : 900 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/dbg_ip_async.v" Line 74
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:22:17 2026...

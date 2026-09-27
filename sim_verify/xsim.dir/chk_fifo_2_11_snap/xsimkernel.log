@@ -1,0 +1,7 @@
+Running: xsim.dir/chk_fifo_2_11_snap/xsimk.exe -runall -simmode gui -wdb chk_fifo_2_11_snap.wdb -simrunnum 0 -socket 5222
+Design successfully loaded
+Design Loading Memory Usage: 9148 KB (Peak: 9148 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 9880 KB (Peak: 9880 KB)
+Simulation CPU Usage: 77 ms

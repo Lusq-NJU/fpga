@@ -1,0 +1,7 @@
+Running: xsim.dir/dbg3_fifo_1_7_snap/xsimk.exe -runall -simmode gui -wdb dbg3_fifo_1_7_snap.wdb -simrunnum 0 -socket 2211
+Design successfully loaded
+Design Loading Memory Usage: 8600 KB (Peak: 8600 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 9256 KB (Peak: 9256 KB)
+Simulation CPU Usage: 15 ms

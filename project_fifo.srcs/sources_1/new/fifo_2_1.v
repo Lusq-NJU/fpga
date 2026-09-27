@@ -12,8 +12,7 @@ module fifo_2_1(
 
     wire            wr_en       ;
     wire            rd_en       ;
-    wire            full        ;
-    wire            empty       ;
+    wire    [7:0]   w_dout      ;
     wire    [10:0]  data_count  ;
 
     fifo_8x2048_standard_sync u_fifo (
@@ -22,20 +21,26 @@ module fifo_2_1(
         .din            (din        ),  // input wire [7 : 0] din
         .wr_en          (wr_en      ),  // input wire wr_en
         .rd_en          (rd_en      ),  // input wire rd_en
-        .dout           (dout       ),  // output wire [7 : 0] dout
-        .full           (full       ),  // output wire full
-        .empty          (empty      ),  // output wire empty
+        .dout           (w_dout     ),  // output wire [7 : 0] dout
         .data_count     (data_count )   // output wire [10 : 0] data_count
     );
 
     assign wr_en = din_vld;
     assign rd_en = data_count >= cfg_thd;
 
+    reg             dout_vld_ff0;
+
     always @(posedge clk or negedge rst_n) begin
-        if(rst_n==0)
+        if(rst_n==0)begin
             dout_vld <= 0;
-        else
-            dout_vld <= rd_en;
+            dout_vld_ff0 <= 0;
+            dout <= 0;
+        end
+        else begin
+            dout_vld_ff0 <= rd_en;
+            dout_vld <= dout_vld_ff0;
+            dout <= w_dout;
+        end
     end
 
 endmodule

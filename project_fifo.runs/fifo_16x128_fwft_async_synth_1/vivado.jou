@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 21 20:51:40 2026
+# Process ID: 6792
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/project_fifo.runs/fifo_16x128_fwft_async_synth_1
+# Command line: vivado.exe -log fifo_16x128_fwft_async.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fifo_16x128_fwft_async.tcl
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/project_fifo.runs/fifo_16x128_fwft_async_synth_1/fifo_16x128_fwft_async.vds
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/project_fifo.runs/fifo_16x128_fwft_async_synth_1\vivado.jou
+#-----------------------------------------------------------
+source fifo_16x128_fwft_async.tcl -notrace

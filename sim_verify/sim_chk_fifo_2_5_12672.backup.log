@@ -1,0 +1,61 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:24:03 2026
+# Process ID: 12672
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_5.log -mode tcl -source {xsim.dir/chk_fifo_2_5_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_5.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_5_snap/xsim_script.tcl
+# xsim {chk_fifo_2_5_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ERROR t=3018000: chan0 beat #1 extra 0000
+ERROR t=4122000: chan0 beat #2 got 0000 expected 0001
+ERROR t=4146000: chan0 beat #3 got 0001 expected 0002
+ERROR t=4170000: chan0 beat #5 got 0002 expected 0003
+ERROR t=4194000: chan0 beat #6 got 0003 expected 0004
+ERROR t=4218000: chan0 beat #8 got 0004 expected 0005
+ERROR t=4242000: chan0 beat #10 got 0005 expected 0006
+ERROR t=4266000: chan0 beat #12 got 0006 expected 0007
+ERROR t=4290000: chan0 beat #13 got 0007 expected 0008
+ERROR t=4314000: chan0 beat #15 got 0008 expected 0009
+ERROR t=4338000: chan0 beat #17 got 0009 expected 000a
+ERROR t=4362000: chan0 beat #19 got 000a expected 000b
+ERROR t=4386000: chan0 beat #20 got 000b expected 000c
+ERROR t=4410000: chan0 beat #22 got 000c expected 000d
+ERROR t=4434000: chan0 beat #23 got 000d expected 000e
+ERROR t=4458000: chan0 beat #25 got 000e expected 000f
+ERROR t=4482000: chan0 beat #27 got 000f expected 0010
+ERROR t=4506000: chan0 beat #28 got 0010 expected 0011
+ERROR t=4530000: chan0 beat #30 got 0011 expected 0012
+ERROR t=4554000: chan0 beat #32 got 0012 expected 0013
+ERROR t=4578000: chan0 beat #34 got 0013 expected 0014
+ERROR t=4602000: chan0 beat #35 got 0014 expected 0015
+ERROR t=4626000: chan0 beat #37 got 0015 expected 0016
+ERROR t=4650000: chan0 beat #39 got 0016 expected 0017
+ERROR t=4674000: chan0 beat #41 got 0017 expected 0018
+ERROR t=4698000: chan0 beat #42 got 0018 expected 0019
+ERROR t=4722000: chan0 beat #44 got 0019 expected 001a
+ERROR t=4746000: chan0 beat #46 got 001a expected 001b
+ERROR t=4770000: chan0 beat #48 got 001b expected 001c
+ERROR t=4794000: chan0 beat #49 got 001c expected 001d
+ERROR t=4818000: chan0 beat #51 got 001d expected 001e
+ERROR t=4842000: chan0 beat #53 got 001e expected 001f
+ERROR t=4866000: chan0 beat #55 extra 001f
+--------------------------------------------------
+fifo_2_5 : written a/b/c = 32/32/31, emitted a/b/c = 33/32/31
+fifo_2_5 : total output beats = 96
+NOTE: some channel data never emitted
+RESULT fifo_2_5: FAIL (33 error(s), 0 bad-chan beat(s))
+--------------------------------------------------
+$finish called at time : 22 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_5.v" Line 94
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:24:05 2026...

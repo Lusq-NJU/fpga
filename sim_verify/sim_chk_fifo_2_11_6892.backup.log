@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:30:52 2026
+# Process ID: 6892
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_11.log -mode tcl -source {xsim.dir/chk_fifo_2_11_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_11.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_11_snap/xsim_script.tcl
+# xsim {chk_fifo_2_11_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ERROR t=14905000: beat #8 data got 0000 expected aabb
+ERROR t=14905000: beat #8 sop got 0 expected 1
+ERROR t=14915000: beat #9 data got 0000 expected ccdd
+ERROR t=14915000: beat #9 eop got 0 expected 1
+ERROR t=15135000: beat #10 data got aabb expected 1122
+ERROR t=15135000: beat #10 eop got 0 expected 1
+ERROR t=15385000: beat #12 data got 1122 expected 7788
+ERROR t=15385000: beat #12 sop got 1 expected 0
+ERROR t=15385000: beat #12 mty got 0 expected 1
+--------------------------------------------------
+fifo_2_11: expected beats = 13, observed beats = 13
+RESULT fifo_2_11: FAIL (9 error(s), 0 idle-tag beat(s))
+--------------------------------------------------
+$finish called at time : 60 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_11.v" Line 150
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:30:55 2026...

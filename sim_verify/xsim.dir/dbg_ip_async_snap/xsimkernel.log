@@ -1,0 +1,7 @@
+Running: xsim.dir/dbg_ip_async_snap/xsimk.exe -runall -simmode gui -wdb dbg_ip_async_snap.wdb -simrunnum 0 -socket 13943
+Design successfully loaded
+Design Loading Memory Usage: 8556 KB (Peak: 8556 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 9236 KB (Peak: 9236 KB)
+Simulation CPU Usage: 46 ms

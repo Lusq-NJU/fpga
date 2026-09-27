@@ -1,0 +1,119 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:05:44 2026
+# Process ID: 11800
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_1_6.log -mode tcl -source {xsim.dir/chk_fifo_1_6_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_1_6.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_1_6_snap/xsim_script.tcl
+# xsim {chk_fifo_1_6_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+ERROR t=690000: beat #1 data got 24 expected 92
+ERROR t=690000: beat #1 sop got 1 expected 0
+ERROR t=710000: beat #2 data got 81 expected 04
+ERROR t=710000: beat #2 sop got 0 expected 1
+ERROR t=730000: beat #3 data got 63 expected 8c
+ERROR t=730000: beat #3 eop got 0 expected 1
+ERROR t=770000: beat #4 data got 8d expected 34
+ERROR t=770000: beat #4 sop got 0 expected 1
+ERROR t=790000: beat #5 data got 12 expected 48
+ERROR t=810000: beat #6 data got 0d expected 34
+ERROR t=830000: beat #7 data got 3d expected f4
+ERROR t=850000: beat #8 data got 8c expected 30
+ERROR t=850000: beat #8 sop got 0 expected 1
+ERROR t=890000: beat #9 data got c6 expected 18
+ERROR t=890000: beat #9 sop got 0 expected 1
+ERROR t=890000: beat #9 eop got 0 expected 1
+ERROR t=950000: beat #10 data got aa expected a9
+ERROR t=950000: beat #10 sop got 0 expected 1
+ERROR t=950000: beat #10 eop got 1 expected 0
+ERROR t=970000: sop/eop asserted while dout_vld==0 (sop=0 eop=1)
+ERROR t=990000: beat #11 data got e8 expected a3
+ERROR t=1010000: sop/eop asserted while dout_vld==0 (sop=1 eop=1)
+ERROR t=1030000: sop/eop asserted while dout_vld==0 (sop=1 eop=1)
+ERROR t=1130000: beat #12 data got 0a expected 2a
+ERROR t=1130000: beat #12 sop got 1 expected 0
+ERROR t=1150000: beat #13 data got 20 expected 80
+ERROR t=1190000: beat #14 data got 9d expected 74
+ERROR t=1190000: beat #14 sop got 0 expected 1
+ERROR t=1210000: beat #15 data got 13 expected 4c
+ERROR t=1270000: beat #16 data got 53 expected 4c
+ERROR t=1270000: beat #16 eop got 0 expected 1
+ERROR t=1310000: beat #17 data got d5 expected 54
+ERROR t=1310000: beat #17 sop got 0 expected 1
+ERROR t=1310000: beat #17 eop got 0 expected 1
+ERROR t=1370000: beat #18 data got ae expected b8
+ERROR t=1370000: beat #18 sop got 0 expected 1
+ERROR t=1390000: beat #19 data got cf expected 3c
+ERROR t=1390000: beat #19 sop got 0 expected 1
+ERROR t=1390000: beat #19 eop got 0 expected 1
+ERROR t=1410000: beat #20 data got 0a expected 28
+ERROR t=1450000: beat #21 data got 3c expected f0
+ERROR t=1490000: beat #22 data got 8a expected 28
+ERROR t=1490000: beat #22 sop got 0 expected 1
+ERROR t=1530000: beat #23 data got d8 expected 60
+ERROR t=1530000: beat #23 sop got 0 expected 1
+ERROR t=1530000: beat #23 eop got 0 expected 1
+ERROR t=1550000: beat #24 data got 89 expected 24
+ERROR t=1550000: beat #24 sop got 0 expected 1
+ERROR t=1570000: beat #25 data got b6 expected d8
+ERROR t=1570000: beat #25 sop got 0 expected 1
+ERROR t=1590000: beat #26 data got ae expected b8
+ERROR t=1590000: beat #26 sop got 0 expected 1
+ERROR t=1650000: beat #27 data got 2a expected a8
+ERROR t=1690000: beat #28 data got 71 expected c4
+ERROR t=1690000: beat #28 eop got 0 expected 1
+ERROR t=1710000: beat #29 data got 4f expected 3c
+ERROR t=1710000: beat #29 eop got 0 expected 1
+ERROR t=1730000: beat #30 data got 3a expected e8
+ERROR t=1750000: beat #31 data got 15 expected 54
+ERROR t=1770000: beat #32 data got d9 expected 64
+ERROR t=1770000: beat #32 sop got 0 expected 1
+ERROR t=1770000: beat #32 eop got 0 expected 1
+ERROR t=1910000: beat #33 data got 4c expected 30
+ERROR t=1910000: beat #33 eop got 0 expected 1
+ERROR t=1930000: beat #34 data got 8f expected 3c
+ERROR t=1930000: beat #34 sop got 0 expected 1
+ERROR t=1950000: beat #35 data got b7 expected dc
+ERROR t=1950000: beat #35 sop got 0 expected 1
+ERROR t=1970000: beat #36 data got 5c expected 70
+ERROR t=1970000: beat #36 eop got 0 expected 1
+ERROR t=1990000: beat #37 data got 89 expected 24
+ERROR t=1990000: beat #37 sop got 0 expected 1
+ERROR t=2030000: beat #38 data got d0 expected 40
+ERROR t=2030000: beat #38 sop got 0 expected 1
+ERROR t=2030000: beat #38 eop got 0 expected 1
+ERROR t=2050000: beat #39 data got 51 expected 44
+ERROR t=2050000: beat #39 eop got 0 expected 1
+ERROR t=2110000: beat #40 data got 0c expected 30
+ERROR t=2130000: beat #41 data got c8 expected 20
+ERROR t=2130000: beat #41 sop got 0 expected 1
+ERROR t=2130000: beat #41 eop got 0 expected 1
+ERROR t=2170000: beat #42 data got 3d expected f4
+ERROR t=2190000: beat #43 data got 7e expected f8
+ERROR t=2190000: beat #43 eop got 0 expected 1
+ERROR t=2210000: beat #44 data got 39 expected e4
+ERROR t=2230000: beat #45 data got d3 expected 4c
+ERROR t=2230000: beat #45 sop got 0 expected 1
+ERROR t=2230000: beat #45 eop got 0 expected 1
+ERROR t=2310000: beat #46 data got 78 expected e0
+ERROR t=2310000: beat #46 eop got 0 expected 1
+ERROR t=2390000: beat #47 data got 49 expected 24
+ERROR t=2390000: beat #47 eop got 0 expected 1
+ERROR t=2410000: beat #48 data got 2a expected a9
+ERROR t=2410000: beat #48 eop got 1 expected 0
+--------------------------------------------------
+fifo_1_6 : accepted writes = 48
+fifo_1_6 : output beats    = 48
+fifo_1_6 : orphan sop/eop  = 286
+RESULT fifo_1_6: FAIL (91 error(s))
+--------------------------------------------------
+$finish called at time : 8 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_1_6.v" Line 97
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:05:50 2026...

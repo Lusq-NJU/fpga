@@ -1,0 +1,101 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:23:41 2026
+# Process ID: 3236
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_dbg_ip_async.log -mode tcl -source {xsim.dir/dbg_ip_async_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_dbg_ip_async.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dbg_ip_async_snap/xsim_script.tcl
+# xsim {dbg_ip_async_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+  B t=24000 rstn=0 wr_en=0 wrb=0 din=000
+  B t=72000 rstn=0 wr_en=0 wrb=1 din=000
+  B t=120000 rstn=1 wr_en=0 wrb=1 din=000
+  B t=168000 rstn=1 wr_en=0 wrb=1 din=000
+  B t=216000 rstn=1 wr_en=0 wrb=1 din=000
+  B t=264000 rstn=1 wr_en=0 wrb=1 din=000
+  D t=306000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=312000 rstn=1 wr_en=0 wrb=1 din=000
+  D t=318000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=330000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=342000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=354000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=360000 rstn=1 wr_en=0 wrb=1 din=000
+  D t=366000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=378000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=390000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=402000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=408000 rstn=1 wr_en=1 wrb=1 din=100
+  D t=414000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=426000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=438000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=450000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=456000 rstn=1 wr_en=1 wrb=1 din=101
+  D t=462000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=474000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=486000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=498000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=504000 rstn=1 wr_en=1 wrb=1 din=102
+  D t=510000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=522000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=534000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=546000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=552000 rstn=1 wr_en=1 wrb=1 din=103
+  D t=558000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=570000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=582000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=594000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=600000 rstn=1 wr_en=1 wrb=1 din=104
+  D t=606000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=618000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=630000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=642000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=648000 rstn=1 wr_en=1 wrb=x din=105
+  D t=654000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=666000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=678000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=690000 empty=1 rdb=0 dout=000 rd_en=0
+  B t=696000 rstn=1 wr_en=0 wrb=x din=105
+  D t=702000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=714000 empty=1 rdb=0 dout=000 rd_en=0
+  D t=726000 empty=0 rdb=0 dout=104 rd_en=1
+ERROR t=726000: beat #0 got 104 expected 100
+  D t=738000 empty=1 rdb=0 dout=104 rd_en=0
+  B t=744000 rstn=1 wr_en=0 wrb=x din=105
+  D t=750000 empty=1 rdb=0 dout=104 rd_en=0
+  D t=762000 empty=1 rdb=0 dout=104 rd_en=0
+  D t=774000 empty=0 rdb=0 dout=105 rd_en=1
+ERROR t=774000: beat #1 got 105 expected 101
+  D t=786000 empty=1 rdb=0 dout=105 rd_en=0
+  B t=792000 rstn=1 wr_en=0 wrb=0 din=105
+  D t=798000 empty=1 rdb=0 dout=105 rd_en=0
+  D t=810000 empty=1 rdb=0 dout=105 rd_en=0
+  D t=822000 empty=1 rdb=0 dout=105 rd_en=0
+  D t=834000 empty=1 rdb=0 dout=105 rd_en=0
+  B t=840000 rstn=1 wr_en=0 wrb=0 din=105
+  D t=846000 empty=1 rdb=0 dout=105 rd_en=0
+  D t=858000 empty=1 rdb=0 dout=105 rd_en=0
+  D t=870000 empty=1 rdb=0 dout=105 rd_en=0
+  D t=882000 empty=1 rdb=0 dout=105 rd_en=0
+  B t=888000 rstn=1 wr_en=0 wrb=0 din=105
+  D t=894000 empty=1 rdb=0 dout=105 rd_en=0
+  B t=936000 rstn=1 wr_en=0 wrb=0 din=105
+  B t=984000 rstn=1 wr_en=0 wrb=0 din=105
+  B t=1032000 rstn=1 wr_en=0 wrb=0 din=105
+  B t=1080000 rstn=1 wr_en=0 wrb=0 din=105
+  B t=1128000 rstn=1 wr_en=0 wrb=0 din=105
+  B t=1176000 rstn=1 wr_en=0 wrb=0 din=105
+--------------------------------------------------
+dbg_ip_async: reset pulse = 100 ns, expected 6 words, read 2
+RESULT dbg_ip_async: FAIL (2 error(s), 2 beats)
+--------------------------------------------------
+$finish called at time : 2 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/dbg_ip_async.v" Line 78
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:23:44 2026...

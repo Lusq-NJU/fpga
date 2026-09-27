@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:34:52 2026
+# Process ID: 7224
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_7.log -mode tcl -source {xsim.dir/chk_fifo_2_7_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_7.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_7_snap/xsim_script.tcl
+# xsim {chk_fifo_2_7_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ERROR t=4482000: chan1 byte #0 got 00 expected 14
+ERROR t=4494000: chan1 byte #1 got 01 expected 15
+ERROR t=4506000: chan1 byte #2 got 02 expected 16
+ERROR t=4518000: chan1 byte #3 got 03 expected 17
+ERROR t=4530000: chan1 byte #4 got 04 expected 18
+ERROR t=4542000: chan1 byte #5 got 05 expected 19
+ERROR t=4554000: chan1 byte #6 got 06 expected 1a
+ERROR t=4566000: chan1 byte #7 got 07 expected 1b
+ERROR t=4578000: chan1 byte #8 got 08 expected 1c
+ERROR t=4590000: chan1 byte #9 got 09 expected 1d
+ERROR t=4602000: chan1 byte #10 got 0a expected 1e
+ERROR t=4614000: chan1 byte #11 got 0b expected 1f
+ERROR t=4626000: chan1 byte #12 got 0c expected 20
+ERROR t=4638000: chan1 byte #13 got 0d expected 21
+ERROR t=4650000: chan1 byte #14 got 0e expected 22
+ERROR t=4662000: chan1 byte #15 got 0f expected 23
+ERROR t=4662000: chan1 eop wrong at 15
+ERROR t=5154000: chan2 byte #0 got 14 expected 32
+ERROR t=5166000: chan2 byte #1 got 15 expected 33
+ERROR t=5178000: chan2 byte #2 got 16 expected 34
+ERROR t=5190000: chan2 byte #3 got 17 expected 35
+ERROR t=5202000: chan2 byte #4 got 18 expected 36
+ERROR t=5214000: chan2 byte #5 got 19 expected 37
+ERROR t=5226000: chan2 byte #6 got 1a expected 38
+ERROR t=5238000: chan2 byte #7 got 1b expected 39
+ERROR t=5250000: chan2 byte #8 got 1c expected 3a
+ERROR t=5262000: chan2 byte #9 got 1d expected 3b
+ERROR t=5274000: chan2 byte #10 got 1e expected 3c
+ERROR t=5286000: chan2 byte #11 got 1f expected 3d
+ERROR t=5298000: chan2 byte #12 got 20 expected 3e
+ERROR t=5310000: chan2 byte #13 got 21 expected 3f
+ERROR t=5322000: chan2 byte #14 got 22 expected 40
+ERROR t=5334000: chan2 byte #15 got 23 expected 41
+ERROR t=5346000: chan2 byte #16 got 24 expected 42
+ERROR t=5358000: chan2 byte #17 got 25 expected 43
+ERROR t=5370000: chan2 byte #18 got 26 expected 44
+ERROR t=5382000: chan2 byte #19 got 27 expected 45
+ERROR t=5394000: chan2 byte #20 got 28 expected 46
+ERROR t=5394000: chan2 eop wrong at 20
+--------------------------------------------------
+fifo_2_7 : emitted a/b/c = 0/16/21 (expected 16/21/31)
+fifo_2_7 : total beats = 68 (pre-stimulus beats = 0)
+NOTE: channel data missing or over-emitted
+RESULT fifo_2_7: FAIL (39 error(s), 0 interleave(s), 31 bad-chan)
+--------------------------------------------------
+$finish called at time : 22 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_7.v" Line 141
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:34:55 2026...

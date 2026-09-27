@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:04:04 2026
+# Process ID: 14732
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_1_4.log -mode tcl -source {xsim.dir/chk_fifo_1_4_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_1_4.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_1_4_snap/xsim_script.tcl
+# xsim {chk_fifo_1_4_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ERROR t=6250000: pack #62 wrong: din=0102 expected {7d,7e}
+ERROR t=6290000: pack #63 wrong: din=0304 expected {7f,80}
+ERROR t=6330000: pack #64 wrong: din=0506 expected {81,82}
+ERROR t=6370000: pack #65 wrong: din=0708 expected {83,84}
+ERROR t=6410000: pack #66 wrong: din=090a expected {85,86}
+ERROR t=7725000: word #63 mismatch got 0102 expected 7d7e
+ERROR t=7735000: word #64 mismatch got 0304 expected 7f80
+ERROR t=7745000: word #65 mismatch got 0506 expected 8182
+ERROR t=7755000: word #66 mismatch got 0708 expected 8384
+ERROR t=7765000: word #67 mismatch got 090a expected 8586
+ERROR t=7775000: word #68 mismatch got 0b0c expected 8788
+ERROR t=7785000: word #69 mismatch got 0d0e expected 898a
+ERROR t=7795000: word #70 mismatch got 0f10 expected 8b8c
+ERROR t=7805000: word #71 mismatch got 1112 expected 8d8e
+ERROR t=7815000: word #72 mismatch got 1314 expected 8f90
+ERROR t=7825000: word #73 mismatch got 1516 expected 9192
+ERROR t=7835000: word #74 mismatch got 1718 expected 9394
+ERROR t=7845000: word #75 mismatch got 191a expected 9596
+ERROR t=7855000: word #76 mismatch got 1b1c expected 9798
+ERROR t=7865000: word #77 mismatch got 1d1e expected 999a
+ERROR t=7875000: word #78 mismatch got 1f20 expected 9b9c
+ERROR t=7885000: word #79 mismatch got 2122 expected 9d9e
+ERROR t=7895000: word #80 mismatch got 2324 expected 9fa0
+ERROR t=7905000: word #81 mismatch got 2526 expected a1a2
+ERROR t=7915000: word #82 mismatch got 2728 expected a3a4
+ERROR t=7925000: word #83 mismatch got 292a expected a5a6
+ERROR t=7935000: word #84 mismatch got 2b2c expected a7a8
+ERROR t=7945000: word #85 mismatch got 2d2e expected a9aa
+ERROR t=7955000: word #86 mismatch got 2f30 expected abac
+ERROR t=7965000: word #87 mismatch got 3132 expected adae
+ERROR t=7975000: word #88 mismatch got 3334 expected afb0
+ERROR t=7985000: word #89 mismatch got 3536 expected b1b2
+ERROR t=7995000: word #90 mismatch got 3738 expected b3b4
+ERROR t=8005000: word #91 mismatch got 393a expected b5b6
+ERROR t=8015000: word #92 mismatch got 3b3c expected b7b8
+ERROR t=8025000: word #93 mismatch got 3d3e expected b9ba
+ERROR t=8035000: word #94 mismatch got 3f40 expected bbbc
+--------------------------------------------------
+fifo_1_4 : input bytes = 265, accepted writes = 94
+fifo_1_4 : output beats = 94
+fifo_1_4 : pack errors  = 32
+RESULT fifo_1_4: FAIL (32 word error(s), 32 pack error(s))
+--------------------------------------------------
+$finish called at time : 30 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_1_4.v" Line 87
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:04:10 2026...

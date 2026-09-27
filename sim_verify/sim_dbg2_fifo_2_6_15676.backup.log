@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:20:10 2026
+# Process ID: 15676
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_dbg2_fifo_2_6.log -mode tcl -source {xsim.dir/dbg2_fifo_2_6_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_dbg2_fifo_2_6.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dbg2_fifo_2_6_snap/xsim_script.tcl
+# xsim {dbg2_fifo_2_6_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+  t=6000 rstn=0 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=18000 rstn=0 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=30000 rstn=0 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=42000 rstn=0 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=54000 rstn=0 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=66000 rstn=0 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=78000 rstn=0 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=90000 rstn=0 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=102000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=114000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=126000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=138000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=150000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=162000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=174000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=186000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=198000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=210000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=222000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=234000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=246000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=258000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=270000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=282000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=294000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+  t=306000 rstn=1 flag=3 eA=1 eB=1 eC=1 rdA=0 rdB=0 rdC=0 vld=0
+$finish called at time : 700 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/dbg2_fifo_2_6.v" Line 67
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:20:15 2026...

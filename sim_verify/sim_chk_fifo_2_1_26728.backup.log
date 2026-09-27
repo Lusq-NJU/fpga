@@ -1,0 +1,125 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 27 19:32:24 2026
+# Process ID: 26728
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_1.log -mode tcl -source {xsim.dir/chk_fifo_2_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_1_snap/xsim_script.tcl
+# xsim {chk_fifo_2_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+ERROR t=410000: byte #1 got 00 expected 10
+ERROR t=430000: byte #2 got 01 expected 11
+ERROR t=450000: byte #3 got 00 expected 12
+ERROR t=470000: byte #4 got 01 expected 13
+ERROR t=490000: byte #5 got 00 expected 14
+ERROR t=510000: byte #6 got 01 expected 15
+ERROR t=530000: byte #7 got 00 expected 16
+ERROR t=550000: byte #8 got 01 expected 17
+ERROR t=570000: byte #9 got 00 expected 18
+ERROR t=590000: byte #10 got 01 expected 19
+ERROR t=610000: byte #11 got 00 expected 1a
+ERROR t=630000: byte #12 got 01 expected 1b
+ERROR t=650000: byte #13 got 00 expected 1c
+ERROR t=670000: byte #14 got 01 expected 1d
+ERROR t=690000: byte #15 got 00 expected 1e
+ERROR t=710000: byte #16 got 01 expected 1f
+ERROR t=730000: byte #17 got 00 expected 20
+ERROR t=750000: byte #18 got 01 expected 21
+ERROR t=770000: byte #19 got 00 expected 22
+ERROR t=790000: byte #20 got 01 expected 23
+ERROR t=810000: byte #21 got 00 expected 24
+ERROR t=830000: byte #22 got 01 expected 25
+ERROR t=850000: byte #23 got 00 expected 26
+ERROR t=870000: byte #24 got 01 expected 27
+ERROR t=890000: byte #25 got 00 expected 28
+ERROR t=910000: byte #26 got 01 expected 29
+ERROR t=930000: byte #27 got 00 expected 2a
+ERROR t=950000: byte #28 got 01 expected 2b
+ERROR t=970000: byte #29 got 00 expected 2c
+ERROR t=990000: byte #30 got 01 expected 2d
+ERROR t=1010000: byte #31 got 00 expected 2e
+ERROR t=1030000: byte #32 got 01 expected 2f
+ERROR t=1050000: byte #33 got 00 expected 30
+ERROR t=1850000: byte #34 got 01 expected 31
+ERROR t=1870000: byte #35 got 00 expected 32
+ERROR t=1890000: byte #36 got 01 expected 33
+ERROR t=1910000: byte #37 got 00 expected 34
+ERROR t=1930000: byte #38 got 01 expected 35
+ERROR t=1950000: byte #39 got 00 expected 36
+ERROR t=1970000: byte #40 got 01 expected 37
+ERROR t=1990000: byte #41 got 00 expected 80
+ERROR t=2010000: byte #42 got 01 expected 81
+ERROR t=2030000: byte #43 got 00 expected 82
+ERROR t=2050000: byte #44 got 01 expected 83
+ERROR t=2070000: byte #45 got 00 expected 84
+ERROR t=2090000: byte #46 got 01 expected 85
+ERROR t=2110000: byte #47 got 00 expected 86
+ERROR t=2130000: byte #48 got 01 expected 87
+ERROR t=2150000: byte #49 got 00 expected 88
+ERROR t=2170000: byte #50 got 01 expected 89
+ERROR t=2190000: byte #51 got 00 expected 8a
+ERROR t=2210000: byte #52 got 01 expected 8b
+ERROR t=2230000: byte #53 got 00 expected 8c
+ERROR t=2250000: byte #54 got 01 expected 8d
+ERROR t=2270000: byte #55 got 00 expected 8e
+ERROR t=2290000: byte #56 got 01 expected 8f
+ERROR t=2310000: byte #57 got 00 expected 90
+ERROR t=2330000: byte #58 got 01 expected 91
+ERROR t=2350000: byte #59 got 00 expected 92
+ERROR t=2370000: byte #60 got 01 expected 93
+ERROR t=2390000: byte #61 got 00 expected 94
+ERROR t=2410000: byte #62 got 01 expected 95
+ERROR t=2430000: byte #63 got 00 expected 96
+ERROR t=2450000: byte #64 got 01 expected 97
+ERROR t=2470000: byte #65 got 00 expected 98
+ERROR t=2490000: byte #66 got 01 expected 99
+ERROR t=2510000: byte #67 got 00 expected 9a
+ERROR t=2530000: byte #68 got 01 expected 9b
+ERROR t=2550000: byte #69 got 00 expected 9c
+ERROR t=2570000: byte #70 got 01 expected 9d
+ERROR t=2590000: byte #71 got 00 expected 9e
+ERROR t=2610000: byte #72 got 01 expected 9f
+ERROR t=2630000: byte #73 got 00 expected a0
+ERROR t=2650000: byte #74 got 01 expected a1
+ERROR t=2670000: byte #75 got 00 expected a2
+ERROR t=2690000: byte #76 got 01 expected a3
+ERROR t=2710000: byte #77 got 00 expected a4
+ERROR t=2730000: byte #78 got 01 expected a5
+ERROR t=2750000: byte #79 got 00 expected a6
+ERROR t=2770000: byte #80 got 01 expected a7
+ERROR t=5450000: byte #81 got 00 expected c0
+ERROR t=5470000: byte #82 got 01 expected c1
+ERROR t=5490000: byte #83 got 00 expected c2
+ERROR t=5510000: byte #84 got 01 expected c3
+ERROR t=5530000: byte #85 got 00 expected c4
+ERROR t=5550000: byte #86 got 01 expected c5
+ERROR t=5570000: byte #87 got 00 expected c6
+ERROR t=5590000: byte #88 got 01 expected c7
+ERROR t=5610000: byte #89 got 00 expected c8
+ERROR t=5630000: byte #90 got 01 expected c9
+ERROR t=5650000: byte #91 got 00 expected ca
+ERROR t=5670000: byte #92 got 01 expected cb
+ERROR t=5690000: byte #93 got 00 expected cc
+ERROR t=5710000: byte #94 got 01 expected cd
+ERROR t=5730000: byte #95 got 00 expected ce
+ERROR t=5750000: byte #96 got 01 expected cf
+ERROR t=5770000: byte #97 got 00 expected d0
+ERROR t=5790000: byte #98 got 01 expected d1
+ERROR t=5810000: byte #99 got 00 expected d2
+ERROR t=5830000: byte #100 got 01 expected d3
+ERROR t=5850000: byte #101 got 00 expected d4
+--------------------------------------------------
+fifo_2_1 : written = 200, output beats = 101
+NOTE: written (200) != observed (101) -> loss or extra
+RESULT fifo_2_1: FAIL (101 error(s))
+--------------------------------------------------
+$finish called at time : 12 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_1.v" Line 67
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 27 19:32:29 2026...

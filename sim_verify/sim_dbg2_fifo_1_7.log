@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 27 19:20:09 2026
+# Process ID: 20808
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_dbg2_fifo_1_7.log -mode tcl -source {xsim.dir/dbg2_fifo_1_7_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_dbg2_fifo_1_7.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dbg2_fifo_1_7_snap/xsim_script.tcl
+# xsim {dbg2_fifo_1_7_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+cyc=2 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=3 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=4 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=5 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=6 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=7 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=8 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=9 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=10 | in vld=0 d=0000 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+=== Case A: 1122(mty0,mid) 3344(mty1,eop) -> expect 11(1,0) 22(0,0) 33(0,1) ===
+cyc=11 | in vld=1 d=1122 s=1 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=12 | in vld=1 d=3344 s=0 e=1 m=1 | out vld=0 d=00 s=0 e=0
+cyc=13 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=14 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=15 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=0 d=00 s=0 e=0
+cyc=16 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=1 d=11 s=1 e=0
+cyc=17 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=1 d=22 s=0 e=0
+cyc=18 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=1 d=33 s=0 e=1
+cyc=19 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=0 d=33 s=0 e=0
+cyc=20 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=0 d=33 s=0 e=0
+cyc=21 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=0 d=33 s=0 e=0
+cyc=22 | in vld=0 d=3344 s=0 e=0 m=0 | out vld=0 d=33 s=0 e=0
+=== Case B: aaaa(mty0,mid) bbbb(mty0,eop) -> expect aa(1,0) aa(0,0) bb(0,0) bb(0,1) ===
+cyc=23 | in vld=1 d=aaaa s=1 e=0 m=0 | out vld=0 d=33 s=0 e=0
+cyc=24 | in vld=1 d=bbbb s=0 e=1 m=0 | out vld=0 d=33 s=0 e=0
+cyc=25 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=0 d=33 s=0 e=0
+cyc=26 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=0 d=33 s=0 e=0
+cyc=27 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=0 d=33 s=0 e=0
+cyc=28 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=1 d=aa s=1 e=0
+cyc=29 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=1 d=aa s=0 e=0
+cyc=30 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=1 d=bb s=0 e=0
+cyc=31 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=1 d=bb s=0 e=1
+cyc=32 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=0 d=bb s=0 e=0
+cyc=33 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=0 d=bb s=0 e=0
+cyc=34 | in vld=0 d=bbbb s=0 e=0 m=0 | out vld=0 d=bb s=0 e=0
+=== Case C: cccc(mty1,eop) alone -> expect cc(1,1) ===
+cyc=35 | in vld=1 d=cccc s=1 e=1 m=1 | out vld=0 d=bb s=0 e=0
+cyc=36 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=bb s=0 e=0
+cyc=37 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=bb s=0 e=0
+cyc=38 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=bb s=0 e=0
+cyc=39 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=bb s=0 e=0
+cyc=40 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=1 d=cc s=1 e=1
+cyc=41 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=cc s=0 e=0
+cyc=42 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=cc s=0 e=0
+cyc=43 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=cc s=0 e=0
+cyc=44 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=cc s=0 e=0
+cyc=45 | in vld=0 d=cccc s=0 e=0 m=0 | out vld=0 d=cc s=0 e=0
+$finish called at time : 891 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/dbg2_fifo_1_7.v" Line 55
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 27 19:20:14 2026...

@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:07:51 2026
+# Process ID: 21388
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_dbg_fifo_1_6.log -mode tcl -source {xsim.dir/dbg_fifo_1_6_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_dbg_fifo_1_6.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dbg_fifo_1_6_snap/xsim_script.tcl
+# xsim {dbg_fifo_1_6_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+  IN  t=610000 d=10 sop=1 eop=0
+  IN  t=630000 d=11 sop=0 eop=0
+  WR  t=630000 din=42 (sop=0 eop=0)
+  IN  t=650000 d=12 sop=0 eop=0
+  WR  t=650000 din=44 (sop=0 eop=0)
+  IN  t=670000 d=13 sop=0 eop=1
+  WR  t=670000 din=48 (sop=0 eop=0)
+  WR  t=690000 din=4d (sop=0 eop=0)
+  OUT t=690000 d=10 sop=1 eop=0
+  OUT t=710000 d=11 sop=0 eop=0
+  OUT t=730000 d=12 sop=0 eop=0
+  OUT t=750000 d=13 sop=0 eop=1
+  IN  t=790000 d=10 sop=1 eop=0
+  IN  t=810000 d=11 sop=0 eop=0
+  WR  t=810000 din=42 (sop=0 eop=0)
+  WR  t=830000 din=44 (sop=0 eop=0)
+  OUT t=870000 d=10 sop=1 eop=0
+  OUT t=890000 d=11 sop=0 eop=0
+  OUT t=910000 d=12 sop=0 eop=1
+SUMMARY in=7 wr=7 out=7
+$finish called at time : 2400 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/dbg_fifo_1_6.v" Line 55
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:07:56 2026...

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 27 19:21:59 2026
+# Process ID: 27180
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_stress_fifo_1_7.log -mode tcl -source {xsim.dir/stress_fifo_1_7_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_stress_fifo_1_7.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/stress_fifo_1_7_snap/xsim_script.tcl
+# xsim {stress_fifo_1_7_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+ERROR t=179550000: byte #1257 data got 10 expected bb
+ERROR t=179590000: byte #1258 data got f7 expected 90
+ERROR t=179590000: byte #1258 eop got 1 expected 0
+ERROR t=179610000: byte #1259 data got 88 expected 10
+ERROR t=179610000: byte #1259 sop got 1 expected 0
+ERROR t=179630000: byte #1260 data got 57 expected f7
+ERROR t=179630000: byte #1260 eop got 0 expected 1
+ERROR t=179650000: byte #1261 data got 69 expected 88
+--------------------------------------------------
+stress fifo_1_7 : packets=400, expected bytes=3227, observed=3171
+stress fifo_1_7 : unqualified-eop cycles=0, throttle cycles=4085
+NOTE: byte-count mismatch (3227 vs 3171) - FIFO overflow under this stimulus
+RESULT stress fifo_1_7: FAIL (2770 error(s), 0 sticky-eop cycle(s))
+--------------------------------------------------
+$finish called at time : 410011 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/stress_fifo_1_7.v" Line 126
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 27 19:22:02 2026...

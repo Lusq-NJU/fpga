@@ -1,0 +1,1 @@
+-L "xil_defaultlib" -L "fifo_generator_v13_2_5" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "dbg3_fifo_1_7_snap" "xil_defaultlib.dbg3_fifo_1_7" "xil_defaultlib.glbl" -log "elab_dbg3_fifo_1_7.log" 

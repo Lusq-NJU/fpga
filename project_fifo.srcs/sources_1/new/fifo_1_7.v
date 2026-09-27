@@ -49,6 +49,7 @@ module fifo_1_7(
     end
 
     reg     [1:0]   cnt0        ;
+    reg     [1:0]   x           ;
     wire            add_cnt0    ;
     wire            end_cnt0    ;
 
@@ -63,8 +64,15 @@ module fifo_1_7(
         end
     end
 
+    always @(*) begin
+        if(data_out[16] == 0)
+            x = 2;
+        else
+            x = 1;
+    end
+
     assign add_cnt0 = b_rdy && empty==0;
-    assign end_cnt0 = add_cnt0 && cnt0==2-1;
+    assign end_cnt0 = add_cnt0 && cnt0==x-1;
     assign rd_en = end_cnt0;
 
     always @(posedge clk or negedge rst_n) begin
@@ -77,7 +85,7 @@ module fifo_1_7(
     always @(posedge clk or negedge rst_n) begin
         if(rst_n==0)
             dout_sop <= 1'd0;
-        else if(add_cnt0 && data_out[18:18]==1 && cnt0==0)
+        else if(add_cnt0 && data_out[18]==1 && cnt0==0)
             dout_sop <= 1;
         else
             dout_sop <= 0;
@@ -85,22 +93,17 @@ module fifo_1_7(
 
     always @(posedge clk or negedge rst_n) begin
         if(rst_n==0)
-            dout_eop <= 1'd0;
-        else if(add_cnt0 && data_out[17:17]==1)begin
-            dout_eop <= data_out[16:16]==0 ? cnt0 : ~cnt0;
-        end
+            dout_eop <= 0;
+        else if(end_cnt0 && data_out[17]==1)
+            dout_eop <= 1;
+        else
+            dout_eop <= 0;
     end
 
     always @(posedge clk or negedge rst_n) begin
         if(rst_n==0)
             dout_vld <= 0;
-        else if(add_cnt0)begin
-            if(data_out[17:17]==0)
-                dout_vld <= 1;
-            else 
-                dout_vld <= data_out[16:16]==1 ? ~cnt0 : 1;
-        end
-        else
-            dout_vld <= 0;
+        else 
+            dout_vld <= add_cnt0;
     end
 endmodule

@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:33:35 2026
+# Process ID: 11880
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_1_7.log -mode tcl -source {xsim.dir/chk_fifo_1_7_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_1_7.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_1_7_snap/xsim_script.tcl
+# xsim {chk_fifo_1_7_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+BUG t=1050000: dout_eop==1 while dout_vld==0 (sticky/unqualified eop)
+BUG t=1070000: dout_eop==1 while dout_vld==0 (sticky/unqualified eop)
+BUG t=1090000: dout_eop==1 while dout_vld==0 (sticky/unqualified eop)
+ERROR t=1150000: byte #10 eop got 1 expected 0
+ERROR t=1190000: byte #11 eop got 1 expected 0
+ERROR t=1210000: byte #12 eop got 1 expected 0
+ERROR t=1230000: byte #13 eop got 1 expected 0
+ERROR t=1250000: byte #14 eop got 1 expected 0
+ERROR t=1350000: byte #15 eop got 1 expected 0
+--------------------------------------------------
+fifo_1_7 : expected valid bytes = 16, observed = 16
+fifo_1_7 : unqualified-eop cycles = 11
+RESULT fifo_1_7: FAIL (6 error(s), 11 sticky-eop cycle(s))
+--------------------------------------------------
+$finish called at time : 10 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_1_7.v" Line 102
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:33:38 2026...

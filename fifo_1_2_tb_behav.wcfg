@@ -3,238 +3,149 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="fifo_2_9_tb_behav.wdb" id="1">
+      <db_ref path="fifo_2_10_tb_behav.wdb" id="1">
          <top_modules>
-            <top_module name="fifo_2_9_tb" />
+            <top_module name="fifo_2_10_tb" />
             <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="11792500fs"></ZoomStartTime>
-      <ZoomEndTime time="12263501fs"></ZoomEndTime>
-      <Cursor1Time time="12070000fs"></Cursor1Time>
+      <ZoomStartTime time="3206000fs"></ZoomStartTime>
+      <ZoomEndTime time="3834501fs"></ZoomEndTime>
+      <Cursor1Time time="1305000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="256"></NameColumnWidth>
-      <ValueColumnWidth column_width="87"></ValueColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="18" />
-   <wvobject fp_name="/fifo_2_9_tb/uut/rst_n" type="logic">
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/fifo_2_10_tb/uut/rst_n" type="logic">
       <obj_property name="ElementShortName">rst_n</obj_property>
       <obj_property name="ObjectShortName">rst_n</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/clk" type="logic">
-      <obj_property name="ElementShortName">clk</obj_property>
-      <obj_property name="ObjectShortName">clk</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/clk_a" type="logic">
+      <obj_property name="ElementShortName">clk_a</obj_property>
+      <obj_property name="ObjectShortName">clk_a</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/din" type="array">
-      <obj_property name="ElementShortName">din[7:0]</obj_property>
-      <obj_property name="ObjectShortName">din[7:0]</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/data_a" type="array">
+      <obj_property name="ElementShortName">data_a[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_a[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/din_vld" type="logic">
-      <obj_property name="ElementShortName">din_vld</obj_property>
-      <obj_property name="ObjectShortName">din_vld</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/data_a_vld" type="logic">
+      <obj_property name="ElementShortName">data_a_vld</obj_property>
+      <obj_property name="ObjectShortName">data_a_vld</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/din_sop" type="logic">
-      <obj_property name="ElementShortName">din_sop</obj_property>
-      <obj_property name="ObjectShortName">din_sop</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/clk_b" type="logic">
+      <obj_property name="ElementShortName">clk_b</obj_property>
+      <obj_property name="ObjectShortName">clk_b</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/din_eop" type="logic">
-      <obj_property name="ElementShortName">din_eop</obj_property>
-      <obj_property name="ObjectShortName">din_eop</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/data_b" type="array">
+      <obj_property name="ElementShortName">data_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_b[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/din_chan" type="array">
-      <obj_property name="ElementShortName">din_chan[1:0]</obj_property>
-      <obj_property name="ObjectShortName">din_chan[1:0]</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/data_b_vld" type="logic">
+      <obj_property name="ElementShortName">data_b_vld</obj_property>
+      <obj_property name="ObjectShortName">data_b_vld</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/dout" type="array">
-      <obj_property name="ElementShortName">dout[7:0]</obj_property>
-      <obj_property name="ObjectShortName">dout[7:0]</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/clk_c" type="logic">
+      <obj_property name="ElementShortName">clk_c</obj_property>
+      <obj_property name="ObjectShortName">clk_c</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/dout_vld" type="logic">
-      <obj_property name="ElementShortName">dout_vld</obj_property>
-      <obj_property name="ObjectShortName">dout_vld</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/data_c" type="array">
+      <obj_property name="ElementShortName">data_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_c[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/dout_sop" type="logic">
-      <obj_property name="ElementShortName">dout_sop</obj_property>
-      <obj_property name="ObjectShortName">dout_sop</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/data_c_vld" type="logic">
+      <obj_property name="ElementShortName">data_c_vld</obj_property>
+      <obj_property name="ObjectShortName">data_c_vld</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/dout_eop" type="logic">
-      <obj_property name="ElementShortName">dout_eop</obj_property>
-      <obj_property name="ObjectShortName">dout_eop</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/clk_d" type="logic">
+      <obj_property name="ElementShortName">clk_d</obj_property>
+      <obj_property name="ObjectShortName">clk_d</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/dout_chan" type="array">
-      <obj_property name="ElementShortName">dout_chan[1:0]</obj_property>
-      <obj_property name="ObjectShortName">dout_chan[1:0]</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/data_d" type="array">
+      <obj_property name="ElementShortName">data_d[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_d[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/flag_order" type="array">
-      <obj_property name="ElementShortName">flag_order[2:0]</obj_property>
-      <obj_property name="ObjectShortName">flag_order[2:0]</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/data_d_vld" type="logic">
+      <obj_property name="ElementShortName">data_d_vld</obj_property>
+      <obj_property name="ObjectShortName">data_d_vld</obj_property>
    </wvobject>
-   <wvobject fp_name="/fifo_2_9_tb/uut/data_din" type="array">
-      <obj_property name="ElementShortName">data_din[9:0]</obj_property>
-      <obj_property name="ObjectShortName">data_din[9:0]</obj_property>
+   <wvobject fp_name="/fifo_2_10_tb/uut/chan_d" type="array">
+      <obj_property name="ElementShortName">chan_d[1:0]</obj_property>
+      <obj_property name="ObjectShortName">chan_d[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="group483" type="group">
-      <obj_property name="label">fifo0</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/fifo_2_9_tb/uut/flag_rd0" type="logic">
-         <obj_property name="ElementShortName">flag_rd0</obj_property>
-         <obj_property name="ObjectShortName">flag_rd0</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_wr_en0" type="logic">
-         <obj_property name="ElementShortName">data_wr_en0</obj_property>
-         <obj_property name="ObjectShortName">data_wr_en0</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_rd_en0" type="logic">
-         <obj_property name="ElementShortName">data_rd_en0</obj_property>
-         <obj_property name="ObjectShortName">data_rd_en0</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_dout0" type="array">
-         <obj_property name="ElementShortName">data_dout0[9:0]</obj_property>
-         <obj_property name="ObjectShortName">data_dout0[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_empty0" type="logic">
-         <obj_property name="ElementShortName">data_empty0</obj_property>
-         <obj_property name="ObjectShortName">data_empty0</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_count0" type="array">
-         <obj_property name="ElementShortName">data_count0[9:0]</obj_property>
-         <obj_property name="ObjectShortName">data_count0[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_wr_en0" type="logic">
-         <obj_property name="ElementShortName">eop_wr_en0</obj_property>
-         <obj_property name="ObjectShortName">eop_wr_en0</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_rd_en0" type="logic">
-         <obj_property name="ElementShortName">eop_rd_en0</obj_property>
-         <obj_property name="ObjectShortName">eop_rd_en0</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_empty0" type="logic">
-         <obj_property name="ElementShortName">eop_empty0</obj_property>
-         <obj_property name="ObjectShortName">eop_empty0</obj_property>
-      </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/r_fifo_order" type="array">
+      <obj_property name="ElementShortName">r_fifo_order[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_fifo_order[1:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="group484" type="group">
-      <obj_property name="label">fifo1</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/fifo_2_9_tb/uut/flag_rd1" type="logic">
-         <obj_property name="ElementShortName">flag_rd1</obj_property>
-         <obj_property name="ObjectShortName">flag_rd1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_wr_en1" type="logic">
-         <obj_property name="ElementShortName">data_wr_en1</obj_property>
-         <obj_property name="ObjectShortName">data_wr_en1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_rd_en1" type="logic">
-         <obj_property name="ElementShortName">data_rd_en1</obj_property>
-         <obj_property name="ObjectShortName">data_rd_en1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_dout1" type="array">
-         <obj_property name="ElementShortName">data_dout1[9:0]</obj_property>
-         <obj_property name="ObjectShortName">data_dout1[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_empty1" type="logic">
-         <obj_property name="ElementShortName">data_empty1</obj_property>
-         <obj_property name="ObjectShortName">data_empty1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_count1" type="array">
-         <obj_property name="ElementShortName">data_count1[9:0]</obj_property>
-         <obj_property name="ObjectShortName">data_count1[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_wr_en1" type="logic">
-         <obj_property name="ElementShortName">eop_wr_en1</obj_property>
-         <obj_property name="ObjectShortName">eop_wr_en1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_rd_en1" type="logic">
-         <obj_property name="ElementShortName">eop_rd_en1</obj_property>
-         <obj_property name="ObjectShortName">eop_rd_en1</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_empty1" type="logic">
-         <obj_property name="ElementShortName">eop_empty1</obj_property>
-         <obj_property name="ObjectShortName">eop_empty1</obj_property>
-      </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/cnt_a" type="logic">
+      <obj_property name="ElementShortName">cnt_a</obj_property>
+      <obj_property name="ObjectShortName">cnt_a</obj_property>
    </wvobject>
-   <wvobject fp_name="group485" type="group">
-      <obj_property name="label">fifo2</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="/fifo_2_9_tb/uut/flag_rd2" type="logic">
-         <obj_property name="ElementShortName">flag_rd2</obj_property>
-         <obj_property name="ObjectShortName">flag_rd2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_wr_en2" type="logic">
-         <obj_property name="ElementShortName">data_wr_en2</obj_property>
-         <obj_property name="ObjectShortName">data_wr_en2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_rd_en2" type="logic">
-         <obj_property name="ElementShortName">data_rd_en2</obj_property>
-         <obj_property name="ObjectShortName">data_rd_en2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_dout2" type="array">
-         <obj_property name="ElementShortName">data_dout2[9:0]</obj_property>
-         <obj_property name="ObjectShortName">data_dout2[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_empty2" type="logic">
-         <obj_property name="ElementShortName">data_empty2</obj_property>
-         <obj_property name="ObjectShortName">data_empty2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_count2" type="array">
-         <obj_property name="ElementShortName">data_count2[9:0]</obj_property>
-         <obj_property name="ObjectShortName">data_count2[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_wr_en2" type="logic">
-         <obj_property name="ElementShortName">eop_wr_en2</obj_property>
-         <obj_property name="ObjectShortName">eop_wr_en2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_rd_en2" type="logic">
-         <obj_property name="ElementShortName">eop_rd_en2</obj_property>
-         <obj_property name="ObjectShortName">eop_rd_en2</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_empty2" type="logic">
-         <obj_property name="ElementShortName">eop_empty2</obj_property>
-         <obj_property name="ObjectShortName">eop_empty2</obj_property>
-      </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/add_cnt_a" type="logic">
+      <obj_property name="ElementShortName">add_cnt_a</obj_property>
+      <obj_property name="ObjectShortName">add_cnt_a</obj_property>
    </wvobject>
-   <wvobject fp_name="group486" type="group">
-      <obj_property name="label">fifo3</obj_property>
-      <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_empty3" type="logic">
-         <obj_property name="ElementShortName">eop_empty3</obj_property>
-         <obj_property name="ObjectShortName">eop_empty3</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_rd_en3" type="logic">
-         <obj_property name="ElementShortName">eop_rd_en3</obj_property>
-         <obj_property name="ObjectShortName">eop_rd_en3</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/eop_wr_en3" type="logic">
-         <obj_property name="ElementShortName">eop_wr_en3</obj_property>
-         <obj_property name="ObjectShortName">eop_wr_en3</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_count3" type="array">
-         <obj_property name="ElementShortName">data_count3[9:0]</obj_property>
-         <obj_property name="ObjectShortName">data_count3[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_empty3" type="logic">
-         <obj_property name="ElementShortName">data_empty3</obj_property>
-         <obj_property name="ObjectShortName">data_empty3</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_dout3" type="array">
-         <obj_property name="ElementShortName">data_dout3[9:0]</obj_property>
-         <obj_property name="ObjectShortName">data_dout3[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_rd_en3" type="logic">
-         <obj_property name="ElementShortName">data_rd_en3</obj_property>
-         <obj_property name="ObjectShortName">data_rd_en3</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/data_wr_en3" type="logic">
-         <obj_property name="ElementShortName">data_wr_en3</obj_property>
-         <obj_property name="ObjectShortName">data_wr_en3</obj_property>
-      </wvobject>
-      <wvobject fp_name="/fifo_2_9_tb/uut/flag_rd3" type="logic">
-         <obj_property name="ElementShortName">flag_rd3</obj_property>
-         <obj_property name="ObjectShortName">flag_rd3</obj_property>
-      </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/end_cnt_a" type="logic">
+      <obj_property name="ElementShortName">end_cnt_a</obj_property>
+      <obj_property name="ObjectShortName">end_cnt_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/r_din_a" type="array">
+      <obj_property name="ElementShortName">r_din_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_din_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_dout_a" type="array">
+      <obj_property name="ElementShortName">w_dout_a[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_a[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/r_wr_en_a" type="logic">
+      <obj_property name="ElementShortName">r_wr_en_a</obj_property>
+      <obj_property name="ObjectShortName">r_wr_en_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_rd_en_a" type="logic">
+      <obj_property name="ElementShortName">w_rd_en_a</obj_property>
+      <obj_property name="ObjectShortName">w_rd_en_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_empty_a" type="logic">
+      <obj_property name="ElementShortName">w_empty_a</obj_property>
+      <obj_property name="ObjectShortName">w_empty_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_dout_b" type="array">
+      <obj_property name="ElementShortName">w_dout_b[15:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_b[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_rd_en_b" type="logic">
+      <obj_property name="ElementShortName">w_rd_en_b</obj_property>
+      <obj_property name="ObjectShortName">w_rd_en_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_empty_b" type="logic">
+      <obj_property name="ElementShortName">w_empty_b</obj_property>
+      <obj_property name="ObjectShortName">w_empty_b</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/cnt_c" type="logic">
+      <obj_property name="ElementShortName">cnt_c</obj_property>
+      <obj_property name="ObjectShortName">cnt_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/add_cnt_c" type="logic">
+      <obj_property name="ElementShortName">add_cnt_c</obj_property>
+      <obj_property name="ObjectShortName">add_cnt_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/end_cnt_c" type="logic">
+      <obj_property name="ElementShortName">end_cnt_c</obj_property>
+      <obj_property name="ObjectShortName">end_cnt_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_dout_c" type="array">
+      <obj_property name="ElementShortName">w_dout_c[31:0]</obj_property>
+      <obj_property name="ObjectShortName">w_dout_c[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_rd_en_c" type="logic">
+      <obj_property name="ElementShortName">w_rd_en_c</obj_property>
+      <obj_property name="ObjectShortName">w_rd_en_c</obj_property>
+   </wvobject>
+   <wvobject fp_name="/fifo_2_10_tb/uut/w_empty_c" type="logic">
+      <obj_property name="ElementShortName">w_empty_c</obj_property>
+      <obj_property name="ObjectShortName">w_empty_c</obj_property>
    </wvobject>
 </wave_config>

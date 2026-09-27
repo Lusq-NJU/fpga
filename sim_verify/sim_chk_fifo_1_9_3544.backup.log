@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:09:46 2026
+# Process ID: 3544
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_1_9.log -mode tcl -source {xsim.dir/chk_fifo_1_9_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_1_9.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_1_9_snap/xsim_script.tcl
+# xsim {chk_fifo_1_9_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+ERROR t=730000: word #4 data got 4241 expected 4200
+ERROR t=870000: extra output word 4041
+ERROR t=1110000: extra output word 4041
+ERROR t=1130000: extra output word 4243
+ERROR t=1270000: word #13 data got 4847 expected 4800
+--------------------------------------------------
+fifo_1_9 : expected words = 13, output beats = 13
+RESULT fifo_1_9: FAIL (5 error(s))
+--------------------------------------------------
+$finish called at time : 10 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_1_9.v" Line 106
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:09:48 2026...

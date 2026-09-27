@@ -1,0 +1,59 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:30:27 2026
+# Process ID: 22840
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_12.log -mode tcl -source {xsim.dir/chk_fifo_2_12_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_12.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_12_snap/xsim_script.tcl
+# xsim {chk_fifo_2_12_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ERROR t=14185000: beat #1 data got 1213 expected 1112
+ERROR t=14205000: beat #2 data got 1413 expected 1213
+ERROR t=14205000: beat #2 eop got 1 expected 0
+ERROR t=14205000: beat #2 mty got 1 expected 0
+ERROR t=14405000: beat #3 data got 3031 expected 1314
+ERROR t=14405000: beat #3 sop got 1 expected 0
+ERROR t=14405000: beat #3 eop got 0 expected 1
+ERROR t=14445000: beat #4 data got 3233 expected 1400
+ERROR t=14445000: beat #4 mty got 0 expected 1
+ERROR t=14685000: beat #5 data got 9000 expected 3031
+ERROR t=14685000: beat #5 chan got 1 expected 0
+ERROR t=14695000: beat #6 data got 9001 expected 3132
+ERROR t=14695000: beat #6 chan got 1 expected 0
+ERROR t=14705000: beat #7 data got 9002 expected 3233
+ERROR t=14705000: beat #7 chan got 1 expected 0
+ERROR t=14905000: beat #8 data got 0000 expected 3300
+ERROR t=14905000: beat #8 eop got 0 expected 1
+ERROR t=14905000: beat #8 mty got 0 expected 1
+ERROR t=14905000: beat #8 chan got 2 expected 0
+ERROR t=14915000: beat #9 data got 0000 expected 9000
+ERROR t=14915000: beat #9 sop got 0 expected 1
+ERROR t=14915000: beat #9 chan got 2 expected 1
+ERROR t=15135000: beat #10 data got aabb expected 9001
+ERROR t=15135000: beat #10 sop got 1 expected 0
+ERROR t=15135000: beat #10 chan got 2 expected 1
+ERROR t=15145000: beat #11 data got ccdd expected 9002
+ERROR t=15145000: beat #11 chan got 2 expected 1
+ERROR t=15375000: beat #12 data got 1122 expected aabb
+ERROR t=15375000: beat #12 eop got 1 expected 0
+--------------------------------------------------
+fifo_2_12: expected beats = 17, observed beats = 13
+NOTE: expected (17) != observed (13)
+RESULT fifo_2_12: FAIL (29 error(s), 0 idle-tag beat(s))
+--------------------------------------------------
+$finish called at time : 60 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_12.v" Line 143
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:30:29 2026...

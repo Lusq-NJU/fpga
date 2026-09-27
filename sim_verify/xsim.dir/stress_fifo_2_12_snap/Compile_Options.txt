@@ -1,0 +1,1 @@
+-L "xil_defaultlib" -L "fifo_generator_v13_2_5" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "stress_fifo_2_12_snap" "xil_defaultlib.stress_fifo_2_12" "xil_defaultlib.glbl" -log "elab_stress_fifo_2_12.log" 

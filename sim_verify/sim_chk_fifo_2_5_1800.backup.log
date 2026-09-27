@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:24:53 2026
+# Process ID: 1800
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_5.log -mode tcl -source {xsim.dir/chk_fifo_2_5_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_5.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_5_snap/xsim_script.tcl
+# xsim {chk_fifo_2_5_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+--------------------------------------------------
+fifo_2_5 : written a/b/c = 32/32/31, emitted a/b/c = 32/32/31
+fifo_2_5 : total output beats = 95 (pre-stimulus beats = 1)
+RESULT fifo_2_5: PASS (per-channel order and completeness held)
+--------------------------------------------------
+$finish called at time : 22 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_5.v" Line 101
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:24:56 2026...

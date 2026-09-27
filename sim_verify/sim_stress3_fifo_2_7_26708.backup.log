@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Sep 27 20:06:34 2026
+# Process ID: 26708
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_stress3_fifo_2_7.log -mode tcl -source {xsim.dir/stress3_fifo_2_7_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_stress3_fifo_2_7.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/stress3_fifo_2_7_snap/xsim_script.tcl
+# xsim {stress3_fifo_2_7_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+--------------------------------------------------
+stress3 fifo_2_7 : emitted a/b/c = 6/0/3 (generated 8/4/3)
+stress3 fifo_2_7 : beats = 9, pre-stimulus = 0, interleave = 0
+RESULT stress3 fifo_2_7: FAIL (0 error(s), 0 interleave(s), 6/8 0/4 3/3 bytes)
+--------------------------------------------------
+$finish called at time : 60 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/stress3_fifo_2_7.v" Line 154
+exit
+INFO: [Common 17-206] Exiting xsim at Sun Sep 27 20:06:38 2026...

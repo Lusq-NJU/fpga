@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:29:23 2026
+# Process ID: 15804
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_11.log -mode tcl -source {xsim.dir/chk_fifo_2_11_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_11.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_11_snap/xsim_script.tcl
+# xsim {chk_fifo_2_11_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ERROR t=14155000: beat #-1 data got 1011 expected xxxx
+ERROR t=14155000: beat #-1 sop got 1 expected x
+ERROR t=14155000: beat #-1 eop got 0 expected x
+ERROR t=14155000: beat #-1 mty got 0 expected x
+ERROR t=14155000: beat #-1 chan got 0 expected x
+ERROR t=14185000: beat #-1 data got 1213 expected xxxx
+ERROR t=14185000: beat #-1 sop got 0 expected x
+ERROR t=14185000: beat #-1 eop got 0 expected x
+ERROR t=14185000: beat #-1 mty got 0 expected x
+ERROR t=14185000: beat #-1 chan got 0 expected x
+ERROR t=14205000: beat #-1 data got 1413 expected xxxx
+ERROR t=14205000: beat #-1 sop got 0 expected x
+ERROR t=14205000: beat #-1 eop got 1 expected x
+ERROR t=14205000: beat #-1 mty got 1 expected x
+ERROR t=14205000: beat #-1 chan got 0 expected x
+ERROR t=14415000: beat #-1 data got 3031 expected xxxx
+ERROR t=14415000: beat #-1 sop got 1 expected x
+ERROR t=14415000: beat #-1 eop got 0 expected x
+ERROR t=14415000: beat #-1 mty got 0 expected x
+ERROR t=14415000: beat #-1 chan got 0 expected x
+ERROR t=14445000: beat #-1 data got 3233 expected xxxx
+ERROR t=14445000: beat #-1 sop got 0 expected x
+ERROR t=14445000: beat #-1 eop got 1 expected x
+ERROR t=14445000: beat #-1 mty got 0 expected x
+ERROR t=14445000: beat #-1 chan got 0 expected x
+ERROR t=14625000: beat #-1 data got 9000 expected xxxx
+ERROR t=14625000: beat #-1 sop got 1 expected x
+ERROR t=14625000: beat #-1 eop got 0 expected x
+ERROR t=14625000: beat #-1 mty got 0 expected x
+ERROR t=14625000: beat #-1 chan got 1 expected x
+ERROR t=14655000: beat #-1 data got 9001 expected xxxx
+ERROR t=14655000: beat #-1 sop got 0 expected x
+ERROR t=14655000: beat #-1 eop got 0 expected x
+ERROR t=14655000: beat #-1 mty got 0 expected x
+ERROR t=14655000: beat #-1 chan got 1 expected x
+ERROR t=14695000: beat #-1 data got 9002 expected xxxx
+ERROR t=14695000: beat #-1 sop got 0 expected x
+ERROR t=14695000: beat #-1 eop got 1 expected x
+ERROR t=14695000: beat #-1 mty got 0 expected x
+ERROR t=14695000: beat #-1 chan got 1 expected x
+ERROR t=14905000: beat #-1 data got 0000 expected xxxx
+ERROR t=14905000: beat #-1 sop got 0 expected x
+ERROR t=14905000: beat #-1 eop got 0 expected x
+ERROR t=14905000: beat #-1 mty got 0 expected x
+ERROR t=14905000: beat #-1 chan got 2 expected x
+ERROR t=14915000: beat #-1 data got 0000 expected xxxx
+ERROR t=14915000: beat #-1 sop got 0 expected x
+ERROR t=14915000: beat #-1 eop got 0 expected x
+ERROR t=14915000: beat #-1 mty got 0 expected x
+ERROR t=14915000: beat #-1 chan got 2 expected x
+ERROR t=15135000: beat #-1 data got aabb expected xxxx
+ERROR t=15135000: beat #-1 sop got 1 expected x
+ERROR t=15135000: beat #-1 eop got 0 expected x
+ERROR t=15135000: beat #-1 mty got 0 expected x
+ERROR t=15135000: beat #-1 chan got 2 expected x
+ERROR t=15145000: beat #-1 data got ccdd expected xxxx
+ERROR t=15145000: beat #-1 sop got 0 expected x
+ERROR t=15145000: beat #-1 eop got 1 expected x
+ERROR t=15145000: beat #-1 mty got 0 expected x
+ERROR t=15145000: beat #-1 chan got 2 expected x
+ERROR t=15385000: beat #-1 data got 1122 expected xxxx
+ERROR t=15385000: beat #-1 sop got 1 expected x
+ERROR t=15385000: beat #-1 eop got 1 expected x
+ERROR t=15385000: beat #-1 mty got 0 expected x
+ERROR t=15385000: beat #-1 chan got 2 expected x
+--------------------------------------------------
+fifo_2_11: expected beats = 17, observed beats = 0
+NOTE: expected (17) != observed (0)
+RESULT fifo_2_11: FAIL (65 error(s), 0 idle-tag beat(s))
+--------------------------------------------------
+$finish called at time : 60 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_11.v" Line 142
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:29:28 2026...

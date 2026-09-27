@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:16:09 2026
+# Process ID: 20736
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_2_6.log -mode tcl -source {xsim.dir/chk_fifo_2_6_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_2_6.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_2_6_snap/xsim_script.tcl
+# xsim {chk_fifo_2_6_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+ERROR t=582000: chan0 byte #2 got 03 expected 02
+ERROR t=606000: chan0 byte #3 got 05 expected 03
+ERROR t=630000: chan0 byte #4 got 07 expected 04
+ERROR t=654000: chan0 byte #5 got 08 expected 05
+ERROR t=678000: chan0 byte #6 got 0a expected 06
+ERROR t=702000: chan0 byte #7 got 0c expected 07
+ERROR t=726000: chan0 byte #8 got 0e expected 08
+ERROR t=750000: chan0 byte #9 got 0f expected 09
+ERROR t=750000: chan0 eop wrong at 9
+ERROR t=774000: chan1 byte #0 got 1d expected 14
+ERROR t=774000: chan1 sop wrong at 0
+ERROR t=786000: chan1 byte #1 got 21 expected 15
+ERROR t=810000: chan1 byte #2 got 24 expected 16
+ERROR t=870000: chan1 byte #3 got 27 expected 17
+ERROR t=918000: chan1 byte #4 got 28 expected 18
+ERROR t=918000: chan1 eop wrong at 4
+ERROR t=1254000: chan2 byte #0 got 4a expected 32
+ERROR t=1254000: chan2 sop wrong at 0
+ERROR t=1338000: chan2 byte #1 got 4b expected 33
+ERROR t=1446000: chan2 byte #2 got 4c expected 34
+ERROR t=1542000: chan2 byte #3 got 4d expected 35
+ERROR t=1638000: chan2 byte #4 got 4e expected 36
+ERROR t=1746000: chan2 byte #5 got 4f expected 37
+ERROR t=1842000: chan2 byte #6 got 50 expected 38
+ERROR t=1842000: chan2 eop wrong at 6
+--------------------------------------------------
+fifo_2_6 : emitted a/b/c = 10/5/7 (expected 16/21/31)
+fifo_2_6 : total beats = 22
+NOTE: channel data missing or over-emitted
+RESULT fifo_2_6: FAIL (25 error(s), 0 interleave(s), 0 bad-chan)
+--------------------------------------------------
+$finish called at time : 12 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_2_6.v" Line 134
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:16:15 2026...

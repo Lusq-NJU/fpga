@@ -1,0 +1,55 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 25 14:19:22 2026
+# Process ID: 21696
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_dbg_fifo_2_6.log -mode tcl -source {xsim.dir/dbg_fifo_2_6_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_dbg_fifo_2_6.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/dbg_fifo_2_6_snap/xsim_script.tcl
+# xsim {dbg_fifo_2_6_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+  BWR t=408000 b=14 sop=1 eop=0
+  BWR t=456000 b=15 sop=0 eop=0
+  BWR t=504000 b=16 sop=0 eop=0
+  OUT t=546000 d=00 chan=0 sop=1 eop=0
+  BWR t=552000 b=17 sop=0 eop=0
+  OUT t=558000 d=01 chan=0 sop=0 eop=0
+  OUT t=582000 d=02 chan=0 sop=0 eop=0
+  BWR t=600000 b=18 sop=0 eop=0
+  OUT t=606000 d=03 chan=0 sop=0 eop=0
+  OUT t=630000 d=04 chan=0 sop=0 eop=0
+  BWR t=648000 b=19 sop=0 eop=1
+  OUT t=654000 d=05 chan=0 sop=0 eop=1
+  OUT t=750000 d=18 chan=1 sop=0 eop=0
+  OUT t=786000 d=19 chan=1 sop=0 eop=1
+  OUT t=1206000 d=38 chan=2 sop=0 eop=0
+  OUT t=1290000 d=39 chan=2 sop=0 eop=0
+  OUT t=1386000 d=3a chan=2 sop=0 eop=0
+  OUT t=1482000 d=3b chan=2 sop=0 eop=0
+  OUT t=1578000 d=3c chan=2 sop=0 eop=0
+  OUT t=1674000 d=3d chan=2 sop=0 eop=0
+  OUT t=1770000 d=3e chan=2 sop=0 eop=0
+  OUT t=1866000 d=3f chan=2 sop=0 eop=0
+  OUT t=1962000 d=40 chan=2 sop=0 eop=0
+  OUT t=2058000 d=41 chan=2 sop=0 eop=0
+  OUT t=2154000 d=42 chan=2 sop=0 eop=0
+  OUT t=2250000 d=43 chan=2 sop=0 eop=0
+  OUT t=2346000 d=44 chan=2 sop=0 eop=0
+  OUT t=2442000 d=45 chan=2 sop=0 eop=0
+  OUT t=2538000 d=46 chan=2 sop=0 eop=0
+  OUT t=2634000 d=47 chan=2 sop=0 eop=0
+  OUT t=2730000 d=48 chan=2 sop=0 eop=0
+  OUT t=2826000 d=49 chan=2 sop=0 eop=0
+  OUT t=2922000 d=4a chan=2 sop=0 eop=0
+$finish called at time : 3 us : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/dbg_fifo_2_6.v" Line 72
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Sep 25 14:19:24 2026...
