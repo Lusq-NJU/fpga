@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 00:24:51 2026
+# Process ID: 17304
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_burst_fifo_5_1.log -mode tcl -source {xsim.dir/probe_burst_fifo_5_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_burst_fifo_5_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_burst_fifo_5_1_snap/xsim_script.tcl
+# xsim {probe_burst_fifo_5_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+BURST K=10 L=1 GAP=0: model beats=130, got 130, packets out 30, divergences 0  FAIL
+BURST K=32 L=1 GAP=0: model beats=416, got 416, packets out 96, divergences 0  FAIL
+BURST K=33 L=1 GAP=0: model beats=429, got 429, packets out 99, divergences 0  FAIL
+BURST K=40 L=1 GAP=0: model beats=520, got 468, packets out 108, divergences 0  FAIL
+  first divergence t=208390000 beat #474: got data=2d sop=0 eop=1, expected data=24 sop=0 eop=1
+BURST K=100 L=1 GAP=0: model beats=1300, got 520, packets out 120, divergences 8  FAIL
+BURST K=10 L=1 GAP=4: model beats=130, got 130, packets out 30, divergences 0  FAIL
+BURST K=50 L=1 GAP=4: model beats=650, got 650, packets out 150, divergences 0  FAIL
+  first divergence t=428450000 beat #2423: got data=e7 sop=0 eop=0, expected data=e3 sop=0 eop=0
+BURST K=4 L=1000 GAP=0: model beats=4048, got 2838, packets out 10, divergences 412  FAIL
+  first divergence t=569830000 beat #2423: got data=e7 sop=0 eop=0, expected data=e3 sop=0 eop=0
+BURST K=10 L=1000 GAP=0: model beats=10120, got 4310, packets out 12, divergences 1880  FAIL
+BURST K=20 L=100 GAP=0: model beats=2240, got 2240, packets out 60, divergences 0  FAIL
+$finish called at time : 904920 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_burst_fifo_5_1.v" Line 118
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 30 00:24:55 2026...

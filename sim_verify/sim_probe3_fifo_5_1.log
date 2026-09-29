@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 00:22:14 2026
+# Process ID: 16740
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe3_fifo_5_1.log -mode tcl -source {xsim.dir/probe3_fifo_5_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe3_fifo_5_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe3_fifo_5_1_snap/xsim_script.tcl
+# xsim {probe3_fifo_5_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+t=200000 NEG: in[vld=0 sop=0 eop=0] r_pkg_id=00 id_wr=0 id_din=00 id_rd=0 id_dout=00 id_empty=1 | out[vld=0 sop=0 eop=0 dout=00]
+t=220000 NEG: in[vld=0 sop=0 eop=0] r_pkg_id=00 id_wr=0 id_din=00 id_rd=0 id_dout=00 id_empty=1 | out[vld=0 sop=0 eop=0 dout=00]
+t=240000 NEG: in[vld=0 sop=0 eop=0] r_pkg_id=00 id_wr=0 id_din=00 id_rd=0 id_dout=00 id_empty=1 | out[vld=0 sop=0 eop=0 dout=00]
+t=260000 NEG: in[vld=0 sop=0 eop=0] r_pkg_id=00 id_wr=0 id_din=00 id_rd=0 id_dout=00 id_empty=1 | out[vld=0 sop=0 eop=0 dout=00]
+t=280000 NEG: in[vld=1 sop=1 eop=1] r_pkg_id=01 id_wr=1 id_din=01 id_rd=0 id_dout=00 id_empty=1 | out[vld=0 sop=0 eop=0 dout=00]
+t=300000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=00 id_empty=1 | out[vld=0 sop=0 eop=0 dout=00]
+t=320000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=00 id_empty=1 | out[vld=0 sop=0 eop=0 dout=00]
+t=340000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=0 sop=0 eop=0 dout=00]
+t=360000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=0 sop=0 eop=0 dout=00]
+t=380000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=1 eop=0 dout=55]
+t=400000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=0 dout=55]
+t=420000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=0 dout=55]
+t=440000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=0 dout=d5]
+t=460000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=0 dout=d5]
+t=480000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=1 dout=01]
+t=500000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=1 eop=1 dout=44]
+t=520000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=1 eop=0 dout=55]
+t=540000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=0 dout=55]
+t=560000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=0 dout=55]
+t=580000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=0 dout=fd]
+t=600000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=1 id_dout=01 id_empty=0 | out[vld=1 sop=0 eop=0 dout=fd]
+t=620000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | out[vld=1 sop=0 eop=1 dout=01]
+t=640000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | out[vld=0 sop=0 eop=1 dout=01]
+t=660000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | out[vld=0 sop=0 eop=1 dout=01]
+t=680000 NEG: in[vld=0 sop=1 eop=1] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | out[vld=0 sop=0 eop=1 dout=01]
+$finish called at time : 690 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe3_fifo_5_1.v" Line 31
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 30 00:22:19 2026...

@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 21:23:23 2026
+# Process ID: 28784
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_len_fifo_4_2.log -mode tcl -source {xsim.dir/probe_len_fifo_4_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_len_fifo_4_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_len_fifo_4_2_snap/xsim_script.tcl
+# xsim {probe_len_fifo_4_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+probe_len fifo_4_2: header count / data FIFO 256 limit
+--- isolated packets, gap 8
+t=200000  -- send pkt len=250 gap=8
+t=5290000  pkt1 header=00fa
+t=5310000  pkt1 checksum=19a5
+t=5351000  -- send pkt len=254 gap=8
+t=10310000  pkt1 eop after 250 data beats (header=00fa checksum=19a5)
+t=10530000  pkt2 header=00fe
+t=10550000  pkt2 checksum=3da3
+t=10591000  -- send pkt len=255 gap=8
+t=15630000  pkt2 eop after 254 data beats (header=00fe checksum=3da3)
+t=15790000  pkt3 header=00ff
+t=15810000  pkt3 checksum=4eb1
+t=15851000  -- send pkt len=256 gap=8
+t=20910000  pkt3 eop after 255 data beats (header=00ff checksum=4eb1)
+t=21070000  pkt4 header=0000
+t=21090000  pkt4 checksum=7fc0
+t=21131000  -- send pkt len=257 gap=8
+t=26210000  pkt4 eop after 256 data beats (header=0000 checksum=7fc0)
+t=26370000  pkt5 header=0001
+t=26390000  pkt5 checksum=d0d0
+t=26431000  -- send pkt len=300 gap=8
+t=31530000  pkt5 eop after 257 data beats (header=0001 checksum=d0d0)
+t=32530000  pkt6 header=002c
+t=32550000  pkt6 checksum=2fa3
+--- abutting long packets, gap 0 (store-and-forward headroom)
+t=40591000  -- send pkt len=250 gap=0
+t=45591000  -- send pkt len=250 gap=0
+t=45670000  pkt6 eop after 508 data beats (header=002c checksum=2fa3)
+t=45710000  pkt7 header=00fa
+t=45730000  pkt7 checksum=da02
+t=50591000  -- send pkt len=250 gap=0
+t=50730000  pkt7 eop after 250 data beats (header=00fa checksum=da02)
+t=50770000  pkt8 header=00fa
+t=50790000  pkt8 checksum=c206
+t=55591000  -- send pkt len=250 gap=8
+t=55790000  pkt8 eop after 250 data beats (header=00fa checksum=c206)
+t=55830000  pkt9 header=00fa
+t=55850000  pkt9 checksum=aa0a
+t=60850000  pkt9 eop after 250 data beats (header=00fa checksum=aa0a)
+t=60890000  pkt10 header=00fa
+t=60910000  pkt10 checksum=920e
+--------------------------------------------------
+probe_len fifo_4_2: 2550 output beats, 10 packets seen
+--------------------------------------------------
+$finish called at time : 76751 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_len_fifo_4_2.v" Line 79
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 21:23:33 2026...

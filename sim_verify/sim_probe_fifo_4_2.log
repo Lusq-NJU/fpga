@@ -1,0 +1,43 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 21:51:04 2026
+# Process ID: 14188
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_fifo_4_2.log -mode tcl -source {xsim.dir/probe_fifo_4_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_fifo_4_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_fifo_4_2_snap/xsim_script.tcl
+# xsim {probe_fifo_4_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+probe fifo_4_2: trace of every output beat
+t=200000  -- send pkt len=3 base=0011
+t=350000  beat 1: dout=0006 vld=1 sop=1 eop=0
+t=370000  beat 2: dout=0036 vld=1 sop=0 eop=0
+t=390000  beat 3: dout=0011 vld=1 sop=0 eop=0
+t=410000  beat 4: dout=0012 vld=1 sop=0 eop=0
+t=430000  beat 5: dout=0013 vld=1 sop=0 eop=1
+t=450000  first idle cycle with vld=0 but sop=0 eop=1 (dout=0013)
+t=451000  -- send pkt len=1 base=a5a5
+t=570000  beat 6: dout=0002 vld=1 sop=1 eop=0
+t=590000  beat 7: dout=a5a5 vld=1 sop=0 eop=0
+t=610000  beat 8: dout=a5a5 vld=1 sop=0 eop=1
+t=671000  -- send pkt len=5 base=0020
+t=870000  beat 9: dout=000a vld=1 sop=1 eop=0
+t=890000  beat 10: dout=00aa vld=1 sop=0 eop=0
+t=910000  beat 11: dout=0020 vld=1 sop=0 eop=0
+t=930000  beat 12: dout=0021 vld=1 sop=0 eop=0
+t=950000  beat 13: dout=0022 vld=1 sop=0 eop=0
+t=970000  beat 14: dout=0023 vld=1 sop=0 eop=0
+t=990000  beat 15: dout=0024 vld=1 sop=0 eop=1
+--------------------------------------------------
+probe fifo_4_2: 15 beats total, 0 of them before the first packet was sent
+probe fifo_4_2: 217 idle cycles (vld=0) with sop or eop still asserted
+--------------------------------------------------
+$finish called at time : 4971 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_fifo_4_2.v" Line 61
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 21:51:07 2026...

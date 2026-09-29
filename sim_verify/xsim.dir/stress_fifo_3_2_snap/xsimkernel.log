@@ -1,0 +1,7 @@
+Running: xsim.dir/stress_fifo_3_2_snap/xsimk.exe -runall -simmode gui -wdb stress_fifo_3_2_snap.wdb -simrunnum 0 -socket 5831
+Design successfully loaded
+Design Loading Memory Usage: 9388 KB (Peak: 9388 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 10052 KB (Peak: 10052 KB)
+Simulation CPU Usage: 46 ms

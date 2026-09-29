@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 28 00:09:56 2026
+# Process ID: 25672
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_stress_fifo_3_1.log -mode tcl -source {xsim.dir/stress_fifo_3_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_stress_fifo_3_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/stress_fifo_3_1_snap/xsim_script.tcl
+# xsim {stress_fifo_3_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+--------------------------------------------------
+stress fifo_3_1 : packets=10, expected bytes=172, observed=172
+RESULT stress fifo_3_1: PASS (order, sop/eop, handshake all correct)
+--------------------------------------------------
+$finish called at time : 11631 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/stress_fifo_3_1.v" Line 91
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 00:10:04 2026...

@@ -1,0 +1,138 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 00:16:25 2026
+# Process ID: 18588
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_fifo_5_1.log -mode tcl -source {xsim.dir/probe_fifo_5_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_fifo_5_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_fifo_5_1_snap/xsim_script.tcl
+# xsim {probe_fifo_5_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+--- pkt1: 1 byte  (word 44332211, mty=3) ---
+t=390000  BEAT 1: dout=55 sop=1 eop=0
+t=410000  BEAT 2: dout=55 sop=0 eop=0
+t=430000  BEAT 3: dout=55 sop=0 eop=0
+t=450000  BEAT 4: dout=XX sop=0 eop=0
+t=470000  BEAT 5: dout=55 sop=1 eop=0
+t=490000  BEAT 6: dout=55 sop=0 eop=0
+t=510000  BEAT 7: dout=55 sop=0 eop=0
+t=530000  BEAT 8: dout=XX sop=0 eop=0
+t=550000  BEAT 9: dout=55 sop=1 eop=0
+t=570000  BEAT 10: dout=55 sop=0 eop=0
+t=590000  BEAT 11: dout=55 sop=0 eop=0
+t=610000  BEAT 12: dout=XX sop=0 eop=0
+t=630000  BEAT 13: dout=55 sop=1 eop=0
+t=650000  BEAT 14: dout=55 sop=0 eop=0
+t=670000  BEAT 15: dout=55 sop=0 eop=0
+t=690000  BEAT 16: dout=XX sop=0 eop=0
+t=710000  BEAT 17: dout=55 sop=1 eop=0
+--- pkt2: 5 bytes (word0 44332211 mty=0, word1 88776655 mty=3) ---
+t=730000  BEAT 18: dout=55 sop=0 eop=0
+t=750000  BEAT 19: dout=55 sop=0 eop=0
+t=770000  BEAT 20: dout=XX sop=0 eop=0
+t=790000  BEAT 21: dout=55 sop=1 eop=0
+t=810000  BEAT 22: dout=55 sop=0 eop=0
+t=830000  BEAT 23: dout=55 sop=0 eop=0
+t=850000  BEAT 24: dout=XX sop=0 eop=0
+t=870000  BEAT 25: dout=55 sop=1 eop=0
+t=890000  BEAT 26: dout=55 sop=0 eop=0
+t=910000  BEAT 27: dout=55 sop=0 eop=0
+t=930000  BEAT 28: dout=XX sop=0 eop=0
+t=950000  BEAT 29: dout=55 sop=1 eop=0
+t=970000  BEAT 30: dout=55 sop=0 eop=0
+t=990000  BEAT 31: dout=55 sop=0 eop=0
+t=1010000  BEAT 32: dout=XX sop=0 eop=0
+t=1030000  BEAT 33: dout=55 sop=1 eop=0
+t=1050000  BEAT 34: dout=55 sop=0 eop=0
+t=1070000  BEAT 35: dout=55 sop=0 eop=0
+t=1090000  BEAT 36: dout=XX sop=0 eop=0
+t=1110000  BEAT 37: dout=55 sop=1 eop=0
+t=1130000  BEAT 38: dout=55 sop=0 eop=0
+t=1150000  BEAT 39: dout=55 sop=0 eop=0
+t=1170000  BEAT 40: dout=XX sop=0 eop=0
+t=1190000  BEAT 41: dout=55 sop=1 eop=0
+t=1210000  BEAT 42: dout=55 sop=0 eop=0
+t=1230000  BEAT 43: dout=55 sop=0 eop=0
+t=1250000  BEAT 44: dout=XX sop=0 eop=0
+t=1270000  BEAT 45: dout=55 sop=1 eop=0
+t=1290000  BEAT 46: dout=55 sop=0 eop=0
+t=1310000  BEAT 47: dout=55 sop=0 eop=0
+t=1330000  BEAT 48: dout=XX sop=0 eop=0
+t=1350000  BEAT 49: dout=55 sop=1 eop=0
+t=1370000  BEAT 50: dout=55 sop=0 eop=0
+t=1390000  BEAT 51: dout=55 sop=0 eop=0
+--- pkt3: 8 bytes (two full words) ---
+t=1410000  BEAT 52: dout=XX sop=0 eop=0
+t=1430000  BEAT 53: dout=55 sop=1 eop=0
+t=1450000  BEAT 54: dout=55 sop=0 eop=0
+t=1470000  BEAT 55: dout=55 sop=0 eop=0
+t=1490000  BEAT 56: dout=XX sop=0 eop=0
+t=1510000  BEAT 57: dout=55 sop=1 eop=0
+t=1530000  BEAT 58: dout=55 sop=0 eop=0
+t=1550000  BEAT 59: dout=55 sop=0 eop=0
+t=1570000  BEAT 60: dout=XX sop=0 eop=0
+t=1590000  BEAT 61: dout=55 sop=1 eop=0
+t=1610000  BEAT 62: dout=55 sop=0 eop=0
+t=1630000  BEAT 63: dout=55 sop=0 eop=0
+t=1650000  BEAT 64: dout=XX sop=0 eop=0
+t=1670000  BEAT 65: dout=55 sop=1 eop=0
+t=1690000  BEAT 66: dout=55 sop=0 eop=0
+t=1710000  BEAT 67: dout=55 sop=0 eop=0
+t=1730000  BEAT 68: dout=XX sop=0 eop=0
+t=1750000  BEAT 69: dout=55 sop=1 eop=0
+t=1770000  BEAT 70: dout=55 sop=0 eop=0
+t=1790000  BEAT 71: dout=55 sop=0 eop=0
+t=1810000  BEAT 72: dout=XX sop=0 eop=0
+t=1830000  BEAT 73: dout=55 sop=1 eop=0
+t=1850000  BEAT 74: dout=55 sop=0 eop=0
+t=1870000  BEAT 75: dout=55 sop=0 eop=0
+t=1890000  BEAT 76: dout=XX sop=0 eop=0
+t=1910000  BEAT 77: dout=55 sop=1 eop=0
+t=1930000  BEAT 78: dout=55 sop=0 eop=0
+t=1950000  BEAT 79: dout=55 sop=0 eop=0
+t=1970000  BEAT 80: dout=XX sop=0 eop=0
+t=1990000  BEAT 81: dout=55 sop=1 eop=0
+t=2010000  BEAT 82: dout=55 sop=0 eop=0
+t=2030000  BEAT 83: dout=55 sop=0 eop=0
+t=2050000  BEAT 84: dout=XX sop=0 eop=0
+t=2070000  BEAT 85: dout=55 sop=1 eop=0
+t=2090000  BEAT 86: dout=55 sop=0 eop=0
+t=2110000  BEAT 87: dout=55 sop=0 eop=0
+t=2130000  BEAT 88: dout=XX sop=0 eop=0
+t=2150000  BEAT 89: dout=55 sop=1 eop=0
+t=2170000  BEAT 90: dout=55 sop=0 eop=0
+t=2190000  BEAT 91: dout=55 sop=0 eop=0
+t=2210000  BEAT 92: dout=XX sop=0 eop=0
+t=2230000  BEAT 93: dout=55 sop=1 eop=0
+t=2250000  BEAT 94: dout=55 sop=0 eop=0
+t=2270000  BEAT 95: dout=55 sop=0 eop=0
+t=2290000  BEAT 96: dout=XX sop=0 eop=0
+t=2310000  BEAT 97: dout=55 sop=1 eop=0
+t=2330000  BEAT 98: dout=55 sop=0 eop=0
+t=2350000  BEAT 99: dout=55 sop=0 eop=0
+t=2370000  BEAT 100: dout=XX sop=0 eop=0
+t=2390000  BEAT 101: dout=55 sop=1 eop=0
+t=2410000  BEAT 102: dout=55 sop=0 eop=0
+t=2430000  BEAT 103: dout=55 sop=0 eop=0
+t=2450000  BEAT 104: dout=XX sop=0 eop=0
+t=2470000  BEAT 105: dout=55 sop=1 eop=0
+t=2490000  BEAT 106: dout=55 sop=0 eop=0
+t=2510000  BEAT 107: dout=55 sop=0 eop=0
+t=2530000  BEAT 108: dout=XX sop=0 eop=0
+t=2550000  BEAT 109: dout=55 sop=1 eop=0
+t=2570000  BEAT 110: dout=55 sop=0 eop=0
+t=2590000  BEAT 111: dout=55 sop=0 eop=0
+t=2610000  BEAT 112: dout=XX sop=0 eop=0
+t=2630000  BEAT 113: dout=55 sop=1 eop=0
+t=2650000  BEAT 114: dout=55 sop=0 eop=0
+t=2670000  BEAT 115: dout=55 sop=0 eop=0
+TOTAL beats=115  (expected: 3x(6 start + 6 end) + 14 data = 50 if both heads are 6 bytes)
+$finish called at time : 2670 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_fifo_5_1.v" Line 63
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 30 00:16:30 2026...

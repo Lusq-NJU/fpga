@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 21:24:19 2026
+# Process ID: 13272
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_len2_fifo_4_2.log -mode tcl -source {xsim.dir/probe_len2_fifo_4_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_len2_fifo_4_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_len2_fifo_4_2_snap/xsim_script.tcl
+# xsim {probe_len2_fifo_4_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+probe_len2 fifo_4_2: word-by-word check of long packets (isolated, gap 400)
+  pkt1 sent len=250: header=00fa checksum=19a5, 250 data beats, eop=1, wrong-words=0 (first at idx 0: got 0000 want 00001000)
+  pkt2 sent len=254: header=00fe checksum=3da3, 254 data beats, eop=1, wrong-words=0 (first at idx 0: got 0000 want 00002000)
+  pkt3 sent len=255: header=00ff checksum=4eb1, 255 data beats, eop=1, wrong-words=0 (first at idx 0: got 0000 want 00003000)
+  pkt4 sent len=256: header=0000 checksum=7fc0, 256 data beats, eop=1, wrong-words=0 (first at idx 0: got 0000 want 00004000)
+  pkt5 sent len=257: header=0001 checksum=d0d0, 257 data beats, eop=1, wrong-words=0 (first at idx 0: got 0000 want 00005000)
+  pkt6 sent len=300: header=0004 checksum=03e8, 558 data beats, eop=1, wrong-words=300 (first at idx 258: got 7000 want 00007102)
+--------------------------------------------------
+probe_len2 fifo_4_2: done, 7 output packets seen
+--------------------------------------------------
+$finish called at time : 110831 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_len2_fifo_4_2.v" Line 78
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 21:24:24 2026...

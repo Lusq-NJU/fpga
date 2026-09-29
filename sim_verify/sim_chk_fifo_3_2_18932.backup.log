@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 28 00:20:10 2026
+# Process ID: 18932
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_3_2.log -mode tcl -source {xsim.dir/chk_fifo_3_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_3_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_3_2_snap/xsim_script.tcl
+# xsim {chk_fifo_3_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+chk fifo_3_2: valid iff len>20 AND word[19]==0x0001
+ERROR t=1590000: extra beat 2000 - packet should have been dropped
+ERROR t=1610000: extra beat 2001 - packet should have been dropped
+ERROR t=1630000: extra beat 2002 - packet should have been dropped
+ERROR t=1650000: extra beat 2003 - packet should have been dropped
+ERROR t=1670000: extra beat 2004 - packet should have been dropped
+ERROR t=1690000: extra beat 2005 - packet should have been dropped
+ERROR t=1710000: extra beat 2006 - packet should have been dropped
+ERROR t=1730000: extra beat 2007 - packet should have been dropped
+--------------------------------------------------
+chk fifo_3_2 : expected beats = 76, observed beats = 96
+NOTE: expected (76) != observed (96)
+RESULT chk fifo_3_2: FAIL (102 error(s))
+--------------------------------------------------
+$finish called at time : 17911 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_3_2.v" Line 85
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 00:20:14 2026...

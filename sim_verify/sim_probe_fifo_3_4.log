@@ -1,0 +1,100 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 00:01:07 2026
+# Process ID: 17732
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_fifo_3_4.log -mode tcl -source {xsim.dir/probe_fifo_3_4_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_fifo_3_4.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_fifo_3_4_snap/xsim_script.tcl
+# xsim {probe_fifo_3_4_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+probe fifo_3_4 pkt1: 0x0001 0x0002 0xFFFD  (mod-2^16 sum = 0, 20-bit sum = 65536)
+  out beat 1: data=0001 sop=1 eop=0 (t=350000)
+  out beat 2: data=0002 sop=0 eop=0 (t=370000)
+  out beat 3: data=fffd sop=0 eop=1 (t=390000)
+probe fifo_3_4 pkt2: 64 x 0x4000 (mod-2^16 sum != 0, 20-bit sum = 0)
+  out beat 4: data=4000 sop=1 eop=0 (t=2430000)
+  out beat 5: data=4000 sop=0 eop=0 (t=2450000)
+  out beat 6: data=4000 sop=0 eop=0 (t=2470000)
+  out beat 7: data=4000 sop=0 eop=0 (t=2490000)
+  out beat 8: data=4000 sop=0 eop=0 (t=2510000)
+  out beat 9: data=4000 sop=0 eop=0 (t=2530000)
+  out beat 10: data=4000 sop=0 eop=0 (t=2550000)
+  out beat 11: data=4000 sop=0 eop=0 (t=2570000)
+  out beat 12: data=4000 sop=0 eop=0 (t=2590000)
+  out beat 13: data=4000 sop=0 eop=0 (t=2610000)
+  out beat 14: data=4000 sop=0 eop=0 (t=2630000)
+  out beat 15: data=4000 sop=0 eop=0 (t=2650000)
+  out beat 16: data=4000 sop=0 eop=0 (t=2670000)
+  out beat 17: data=4000 sop=0 eop=0 (t=2690000)
+  out beat 18: data=4000 sop=0 eop=0 (t=2710000)
+  out beat 19: data=4000 sop=0 eop=0 (t=2730000)
+  out beat 20: data=4000 sop=0 eop=0 (t=2750000)
+  out beat 21: data=4000 sop=0 eop=0 (t=2770000)
+  out beat 22: data=4000 sop=0 eop=0 (t=2790000)
+  out beat 23: data=4000 sop=0 eop=0 (t=2810000)
+  out beat 24: data=4000 sop=0 eop=0 (t=2830000)
+  out beat 25: data=4000 sop=0 eop=0 (t=2850000)
+  out beat 26: data=4000 sop=0 eop=0 (t=2870000)
+  out beat 27: data=4000 sop=0 eop=0 (t=2890000)
+  out beat 28: data=4000 sop=0 eop=0 (t=2910000)
+  out beat 29: data=4000 sop=0 eop=0 (t=2930000)
+  out beat 30: data=4000 sop=0 eop=0 (t=2950000)
+  out beat 31: data=4000 sop=0 eop=0 (t=2970000)
+  out beat 32: data=4000 sop=0 eop=0 (t=2990000)
+  out beat 33: data=4000 sop=0 eop=0 (t=3010000)
+  out beat 34: data=4000 sop=0 eop=0 (t=3030000)
+  out beat 35: data=4000 sop=0 eop=0 (t=3050000)
+  out beat 36: data=4000 sop=0 eop=0 (t=3070000)
+  out beat 37: data=4000 sop=0 eop=0 (t=3090000)
+  out beat 38: data=4000 sop=0 eop=0 (t=3110000)
+  out beat 39: data=4000 sop=0 eop=0 (t=3130000)
+  out beat 40: data=4000 sop=0 eop=0 (t=3150000)
+  out beat 41: data=4000 sop=0 eop=0 (t=3170000)
+  out beat 42: data=4000 sop=0 eop=0 (t=3190000)
+  out beat 43: data=4000 sop=0 eop=0 (t=3210000)
+  out beat 44: data=4000 sop=0 eop=0 (t=3230000)
+  out beat 45: data=4000 sop=0 eop=0 (t=3250000)
+  out beat 46: data=4000 sop=0 eop=0 (t=3270000)
+  out beat 47: data=4000 sop=0 eop=0 (t=3290000)
+  out beat 48: data=4000 sop=0 eop=0 (t=3310000)
+  out beat 49: data=4000 sop=0 eop=0 (t=3330000)
+  out beat 50: data=4000 sop=0 eop=0 (t=3350000)
+  out beat 51: data=4000 sop=0 eop=0 (t=3370000)
+  out beat 52: data=4000 sop=0 eop=0 (t=3390000)
+  out beat 53: data=4000 sop=0 eop=0 (t=3410000)
+  out beat 54: data=4000 sop=0 eop=0 (t=3430000)
+  out beat 55: data=4000 sop=0 eop=0 (t=3450000)
+  out beat 56: data=4000 sop=0 eop=0 (t=3470000)
+  out beat 57: data=4000 sop=0 eop=0 (t=3490000)
+  out beat 58: data=4000 sop=0 eop=0 (t=3510000)
+  out beat 59: data=4000 sop=0 eop=0 (t=3530000)
+  out beat 60: data=4000 sop=0 eop=0 (t=3550000)
+  out beat 61: data=4000 sop=0 eop=0 (t=3570000)
+  out beat 62: data=4000 sop=0 eop=0 (t=3590000)
+  out beat 63: data=4000 sop=0 eop=0 (t=3610000)
+  out beat 64: data=4000 sop=0 eop=0 (t=3630000)
+  out beat 65: data=4000 sop=0 eop=0 (t=3650000)
+  out beat 66: data=4000 sop=0 eop=0 (t=3670000)
+  out beat 67: data=4000 sop=0 eop=1 (t=3690000)
+probe fifo_3_4 pkt3: 0x0000 0x0000 0x0000  (sum = 0 both ways)
+  out beat 68: data=0000 sop=1 eop=0 (t=4890000)
+  out beat 69: data=0000 sop=0 eop=0 (t=4910000)
+  out beat 70: data=0000 sop=0 eop=1 (t=4930000)
+probe fifo_3_4 pkt4: 0x0000 0x0000 0x0000 with din_err on eop (sum = 0 but err)
+probe fifo_3_4 pkt5: 0x0010 0x0020 0x0030  (sum != 0 both ways)
+--------------------------------------------------
+probe fifo_3_4 : beats seen = 70
+  pkt1 visible => 20-bit accumulator reading (2^16 wrap NOT detected)
+  pkt2 visible => 20-bit accumulator reading; pkt2 hidden => mod-2^16 reading
+  pkt3 only visible (3 beats) => both non-zero-sum cases dropped
+--------------------------------------------------
+$finish called at time : 15311 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_fifo_3_4.v" Line 72
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 00:01:09 2026...

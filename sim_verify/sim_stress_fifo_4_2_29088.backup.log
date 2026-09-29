@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 21:22:20 2026
+# Process ID: 29088
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_stress_fifo_4_2.log -mode tcl -source {xsim.dir/stress_fifo_4_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_stress_fifo_4_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/stress_fifo_4_2_snap/xsim_script.tcl
+# xsim {stress_fifo_4_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+stress fifo_4_2: 30 random packets, random lengths/patterns/gaps/bubbles
+  pkt 0: len=12 mode=2 base=b07c gap=1 bubbles=2
+  pkt 1: len=37 mode=4 base=e365 gap=2 bubbles=0
+  pkt 2: len=33 mode=4 base=773c gap=3 bubbles=0
+  pkt 3: len=40 mode=1 base=e4ac gap=3 bubbles=0
+  pkt 4: len=4 mode=3 base=53f5 gap=1 bubbles=0
+  pkt 5: len=38 mode=3 base=1751 gap=2 bubbles=1
+  pkt 6: len=3 mode=5 base=ebfd gap=1 bubbles=2
+  pkt 7: len=3 mode=0 base=7d80 gap=0 bubbles=2
+  pkt 8: len=9 mode=3 base=a23a gap=3 bubbles=1
+  pkt 9: len=4 mode=0 base=bcd5 gap=1 bubbles=2
+  pkt 10: len=31 mode=4 base=9a29 gap=0 bubbles=0
+  pkt 11: len=4 mode=0 base=1812 gap=0 bubbles=2
+  pkt 12: len=1 mode=0 base=bb9d gap=3 bubbles=2
+  pkt 13: len=2 mode=0 base=55ba gap=0 bubbles=1
+  pkt 14: len=27 mode=3 base=c6fe gap=0 bubbles=0
+  pkt 15: len=1 mode=2 base=7721 gap=0 bubbles=0
+  pkt 16: len=1 mode=2 base=3f48 gap=3 bubbles=1
+  pkt 17: len=4 mode=2 base=20f7 gap=0 bubbles=0
+  pkt 18: len=2 mode=4 base=6aa1 gap=0 bubbles=1
+  pkt 19: len=14 mode=2 base=39cb gap=2 bubbles=1
+  pkt 20: len=40 mode=2 base=2fba gap=2 bubbles=2
+  pkt 21: len=17 mode=5 base=e0a5 gap=3 bubbles=1
+  pkt 22: len=4 mode=4 base=add1 gap=3 bubbles=0
+  pkt 23: len=4 mode=4 base=5d29 gap=3 bubbles=1
+  pkt 24: len=2 mode=1 base=289e gap=2 bubbles=0
+  pkt 25: len=27 mode=4 base=5252 gap=0 bubbles=2
+  pkt 26: len=1 mode=0 base=c8e6 gap=0 bubbles=0
+  pkt 27: len=1 mode=5 base=c455 gap=3 bubbles=2
+  pkt 28: len=36 mode=3 base=4e07 gap=0 bubbles=0
+  pkt 29: len=4 mode=1 base=97ab gap=5 bubbles=0
+--------------------------------------------------
+stress fifo_4_2 : expected beats = 466, observed beats = 466
+RESULT stress fifo_4_2: PASS (466 beats, header+checksum+data clean)
+--------------------------------------------------
+$finish called at time : 32771 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/stress_fifo_4_2.v" Line 121
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 21:22:24 2026...

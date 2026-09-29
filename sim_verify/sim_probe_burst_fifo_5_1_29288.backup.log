@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 00:25:16 2026
+# Process ID: 29288
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_burst_fifo_5_1.log -mode tcl -source {xsim.dir/probe_burst_fifo_5_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_burst_fifo_5_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_burst_fifo_5_1_snap/xsim_script.tcl
+# xsim {probe_burst_fifo_5_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+BURST K=32 L=1 GAP=0: model beats=416, got 416, packets out 32/32, divergences 0  PASS
+BURST K=33 L=1 GAP=0: model beats=429, got 429, packets out 33/33, divergences 0  PASS
+BURST K=34 L=1 GAP=0: model beats=442, got 442, packets out 34/34, divergences 0  PASS
+BURST K=35 L=1 GAP=0: model beats=455, got 455, packets out 35/35, divergences 0  PASS
+BURST K=36 L=1 GAP=0: model beats=468, got 468, packets out 36/36, divergences 0  PASS
+BURST K=37 L=1 GAP=0: model beats=481, got 468, packets out 36/37, divergences 0  FAIL
+BURST K=38 L=1 GAP=0: model beats=494, got 468, packets out 36/38, divergences 0  FAIL
+BURST K=40 L=1 GAP=0: model beats=520, got 468, packets out 36/40, divergences 0  FAIL
+BURST K=2 L=1000 GAP=0: model beats=2024, got 2024, packets out 2/2, divergences 0  PASS
+  first divergence t=557930000 beat #2423: got data=e7 sop=0 eop=0, expected data=e3 sop=0 eop=0
+BURST K=3 L=1000 GAP=0: model beats=3036, got 2574, packets out 2/3, divergences 148  FAIL
+  first divergence t=674030000 beat #2423: got data=e7 sop=0 eop=0, expected data=e3 sop=0 eop=0
+BURST K=4 L=1000 GAP=0: model beats=4048, got 2838, packets out 3/4, divergences 412  FAIL
+BURST K=19 L=100 GAP=0: model beats=2128, got 2128, packets out 19/19, divergences 0  PASS
+BURST K=20 L=100 GAP=0: model beats=2240, got 2240, packets out 20/20, divergences 0  PASS
+BURST K=21 L=100 GAP=0: model beats=2352, got 2352, packets out 21/21, divergences 0  PASS
+$finish called at time : 1049160 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_burst_fifo_5_1.v" Line 126
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 30 00:25:19 2026...

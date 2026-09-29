@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 28 23:56:20 2026
+# Process ID: 14488
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_stress_fifo_4_1.log -mode tcl -source {xsim.dir/stress_fifo_4_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_stress_fifo_4_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/stress_fifo_4_1_snap/xsim_script.tcl
+# xsim {stress_fifo_4_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+ERROR t=50000: extra beat data=00 sop=1 eop=0 - no beat belongs here
+stress fifo_4_1: 20 random packets, random lengths, random gaps
+--------------------------------------------------
+stress fifo_4_1 : expected beats = 345, observed beats = 13
+NOTE: expected (345) != observed (13)
+RESULT stress fifo_4_1: FAIL (1 error(s))
+--------------------------------------------------
+$finish called at time : 19231 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/stress_fifo_4_1.v" Line 92
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 23:56:25 2026...

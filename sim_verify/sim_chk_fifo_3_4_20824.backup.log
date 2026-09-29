@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 28 21:05:17 2026
+# Process ID: 20824
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_3_4.log -mode tcl -source {xsim.dir/chk_fifo_3_4_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_3_4.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_3_4_snap/xsim_script.tcl
+# xsim {chk_fifo_3_4_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+chk fifo_3_4: forwarded iff 16-bit wrap sum is 0 and no err on eop
+ERROR t=4610000: beat #1 data got 0000 expected 0001
+ERROR t=4610000: beat #1 eop got 1 expected 0
+ERROR t=4630000: beat #2 data got 0000 expected 0002
+ERROR t=4630000: beat #2 sop got 1 expected 0
+ERROR t=4630000: beat #2 eop got 1 expected 0
+ERROR t=4650000: beat #3 data got 0000 expected fffd
+ERROR t=4650000: beat #3 sop got 1 expected 0
+ERROR t=4670000: beat #4 data got 0000 expected 1000
+--------------------------------------------------
+chk fifo_3_4 : expected beats = 44, observed beats = 41
+NOTE: expected (44) != observed (41)
+RESULT chk fifo_3_4: FAIL (52 error(s))
+--------------------------------------------------
+$finish called at time : 17311 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_3_4.v" Line 101
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 21:05:23 2026...

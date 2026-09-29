@@ -1,0 +1,74 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 00:20:01 2026
+# Process ID: 24276
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_fifo_5_1.log -mode tcl -source {xsim.dir/probe_fifo_5_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_fifo_5_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_fifo_5_1_snap/xsim_script.tcl
+# xsim {probe_fifo_5_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+--- pkt1: 1 byte  (word 44332211, mty=3) ---
+t=390000  BEAT 1: dout=55 sop=1 eop=0
+t=410000  BEAT 2: dout=55 sop=0 eop=0
+t=430000  BEAT 3: dout=55 sop=0 eop=0
+t=450000  BEAT 4: dout=d5 sop=0 eop=0
+t=470000  BEAT 5: dout=d5 sop=0 eop=0
+t=490000  BEAT 6: dout=01 sop=0 eop=1
+t=510000  BEAT 7: dout=44 sop=1 eop=1
+t=530000  BEAT 8: dout=55 sop=1 eop=0
+t=550000  BEAT 9: dout=55 sop=0 eop=0
+t=570000  BEAT 10: dout=55 sop=0 eop=0
+t=590000  BEAT 11: dout=fd sop=0 eop=0
+t=610000  BEAT 12: dout=fd sop=0 eop=0
+t=630000  BEAT 13: dout=01 sop=0 eop=1
+--- pkt2: 5 bytes (word0 44332211 mty=0, word1 88776655 mty=3) ---
+t=870000  BEAT 14: dout=55 sop=1 eop=0
+t=890000  BEAT 15: dout=55 sop=0 eop=0
+t=910000  BEAT 16: dout=55 sop=0 eop=0
+t=930000  BEAT 17: dout=d5 sop=0 eop=0
+t=950000  BEAT 18: dout=d5 sop=0 eop=0
+t=970000  BEAT 19: dout=02 sop=0 eop=1
+t=990000  BEAT 20: dout=44 sop=1 eop=0
+t=1010000  BEAT 21: dout=33 sop=0 eop=0
+t=1030000  BEAT 22: dout=22 sop=0 eop=0
+t=1050000  BEAT 23: dout=11 sop=0 eop=0
+t=1070000  BEAT 24: dout=88 sop=0 eop=1
+t=1090000  BEAT 25: dout=55 sop=1 eop=0
+t=1110000  BEAT 26: dout=55 sop=0 eop=0
+t=1130000  BEAT 27: dout=55 sop=0 eop=0
+t=1150000  BEAT 28: dout=fd sop=0 eop=0
+t=1170000  BEAT 29: dout=fd sop=0 eop=0
+t=1190000  BEAT 30: dout=02 sop=0 eop=1
+--- pkt3: 8 bytes (two full words) ---
+t=1550000  BEAT 31: dout=55 sop=1 eop=0
+t=1570000  BEAT 32: dout=55 sop=0 eop=0
+t=1590000  BEAT 33: dout=55 sop=0 eop=0
+t=1610000  BEAT 34: dout=d5 sop=0 eop=0
+t=1630000  BEAT 35: dout=d5 sop=0 eop=0
+t=1650000  BEAT 36: dout=03 sop=0 eop=1
+t=1670000  BEAT 37: dout=44 sop=1 eop=0
+t=1690000  BEAT 38: dout=33 sop=0 eop=0
+t=1710000  BEAT 39: dout=22 sop=0 eop=0
+t=1730000  BEAT 40: dout=11 sop=0 eop=0
+t=1750000  BEAT 41: dout=88 sop=0 eop=0
+t=1770000  BEAT 42: dout=77 sop=0 eop=0
+t=1790000  BEAT 43: dout=66 sop=0 eop=0
+t=1810000  BEAT 44: dout=55 sop=0 eop=1
+t=1830000  BEAT 45: dout=55 sop=1 eop=0
+t=1850000  BEAT 46: dout=55 sop=0 eop=0
+t=1870000  BEAT 47: dout=55 sop=0 eop=0
+t=1890000  BEAT 48: dout=fd sop=0 eop=0
+t=1910000  BEAT 49: dout=fd sop=0 eop=0
+t=1930000  BEAT 50: dout=03 sop=0 eop=1
+t=2190000  (idle heartbeat, beats so far 50)
+TOTAL beats=50  (expected: 3x(6 start + 6 end) + 14 data = 50 if both heads are 6 bytes)
+$finish called at time : 2670 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_fifo_5_1.v" Line 63
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 30 00:20:03 2026...

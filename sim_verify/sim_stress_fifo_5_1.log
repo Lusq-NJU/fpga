@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 00:24:06 2026
+# Process ID: 27352
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_stress_fifo_5_1.log -mode tcl -source {xsim.dir/stress_fifo_5_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_stress_fifo_5_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/stress_fifo_5_1_snap/xsim_script.tcl
+# xsim {stress_fifo_5_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+packet 0: len=3 base=00000097
+packet 1: len=709 base=00000085
+packet 2: len=174 base=0000007b
+packet 3: len=681 base=000000cc
+packet 4: len=997 base=00000021
+packet 5: len=2 base=0000000f
+packet 6: len=3 base=0000000b
+packet 7: len=997 base=000000bd
+packet 8: len=4 base=00000029
+packet 9: len=997 base=0000009d
+packet 10: len=570 base=000000e6
+packet 11: len=997 base=000000c6
+packet 12: len=4 base=0000000e
+packet 13: len=2 base=00000077
+packet 14: len=999 base=0000008f
+packet 15: len=394 base=000000cd
+packet 16: len=1 base=0000002a
+packet 17: len=927 base=0000005a
+packet 18: len=2 base=000000f2
+packet 19: len=726 base=0000009d
+PASS: 20 packets, 9189 data bytes, 9429 beats checked against the model, 0 errors
+$finish called at time : 245230 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/stress_fifo_5_1.v" Line 116
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 30 00:24:11 2026...

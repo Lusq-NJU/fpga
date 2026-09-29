@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 21:51:14 2026
+# Process ID: 11004
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_len2_fifo_4_2.log -mode tcl -source {xsim.dir/probe_len2_fifo_4_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_len2_fifo_4_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_len2_fifo_4_2_snap/xsim_script.tcl
+# xsim {probe_len2_fifo_4_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+probe_len2 fifo_4_2: data-FIFO capacity, one reset per case
+  === case: single packet of 125 words, isolated
+     header=00fa (sent len=125)
+     checksum=2b57 (sent len=125)
+     -> eop after 125 data beats, 0 of them wrong (sent len=125)
+  === case: single packet of 126 words, isolated
+     header=00fc (sent len=126)
+     checksum=3ccf (sent len=126)
+     -> eop after 126 data beats, 0 of them wrong (sent len=126)
+  === case: single packet of 127 words, isolated
+     header=00fe (sent len=127)
+     checksum=4e4a (sent len=127)
+     -> eop after 127 data beats, 0 of them wrong (sent len=127)
+  === case: single packet of 128 words, isolated
+     header=0000 (sent len=128)
+     checksum=5fc8 (sent len=128)
+     -> eop after 128 data beats, 0 of them wrong (sent len=128)
+  === case: single packet of 129 words, isolated
+     header=0002 (sent len=129)
+     checksum=7149 (sent len=129)
+     -> eop after 129 data beats, 0 of them wrong (sent len=129)
+  === case: 200 words (400 bytes) isolated
+     header=0090 (sent len=200)
+     checksum=4e20 (sent len=200)
+     -> eop after 200 data beats, 0 of them wrong (sent len=200)
+  === case: 258 words, then 4-word packet 20 cycles later (no reset)
+     header=0004 (sent len=258)
+     checksum=a212 (sent len=258)
+     first bad data word at index 14: got 900e want 0000a00e
+     -> eop after 258 data beats, 244 of them wrong (sent len=4)
+     header=0008 (sent len=4)
+     checksum=8008 (sent len=4)
+     -> eop after 4 data beats, 0 of them wrong (sent len=4)
+probe_len2 fifo_4_2: done
+$finish called at time : 84851 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_len2_fifo_4_2.v" Line 86
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 21:51:16 2026...

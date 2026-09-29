@@ -1,0 +1,7 @@
+Running: xsim.dir/probe_trace_fifo_3_3_snap/xsimk.exe -runall -simmode gui -wdb probe_trace_fifo_3_3_snap.wdb -simrunnum 0 -socket 10585
+Design successfully loaded
+Design Loading Memory Usage: 9388 KB (Peak: 9388 KB)
+Design Loading CPU Usage: 30 ms
+Simulation completed
+Simulation Memory Usage: 10480 KB (Peak: 10480 KB)
+Simulation CPU Usage: 46 ms

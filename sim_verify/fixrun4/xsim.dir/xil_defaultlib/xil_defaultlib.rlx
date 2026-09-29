@@ -1,0 +1,12 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/coding/verilog/xc7k70t/project_fifo/project_fifo.gen/sources_1/ip/fifo_10x512_fwft_sync/sim/fifo_10x512_fwft_sync.v,1789806787,verilog,,,,fifo_10x512_fwft_sync,,,,,,,,
+D:/coding/verilog/xc7k70t/project_fifo/project_fifo.gen/sources_1/ip/fifo_8x32_fwft_sync/sim/fifo_8x32_fwft_sync.v,1790607349,verilog,,,,fifo_8x32_fwft_sync,,,,,,,,
+D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_4_1.v,1790610933,verilog,,,,chk_fifo_4_1,,,,,,,,
+D:/coding/verilog/xc7k70t/project_fifo/sim_verify/fifo_4_1_fix.v,1790610956,verilog,,,,fifo_4_1,,,,,,,,
+D:/coding/verilog/xc7k70t/project_fifo/sim_verify/glbl.v,1790316015,verilog,,D:/coding/verilog/xc7k70t/project_fifo/sim_verify/fifo_4_1_fix.v,,glbl,,,,,,,,
+D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_fifo_4_1.v,1790610257,verilog,,,,probe_fifo_4_1,,,,,,,,
+D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_len_fifo_4_1.v,1790611061,verilog,,,,probe_len_fifo_4_1,,,,,,,,
+D:/coding/verilog/xc7k70t/project_fifo/sim_verify/stress_fifo_4_1.v,1790610938,verilog,,,,stress_fifo_4_1,,,,,,,,

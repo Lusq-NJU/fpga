@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 21:50:14 2026
+# Process ID: 1920
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/mut42b
+# Command line: xsim.exe -log sim_chk_fifo_4_2.log -mode tcl -source {xsim.dir/chk_fifo_4_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/mut42b/sim_chk_fifo_4_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/mut42b\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_4_2_snap/xsim_script.tcl
+# xsim {chk_fifo_4_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+chk fifo_4_2: per packet header(bytes,sop) + checksum + data(eop), silence when idle
+  use case: packet <= 250 bytes = 125 words
+ERROR t=310000: beat #1 data got 0001 expected 0002
+ERROR t=1550000: beat #4 data got 0002 expected 0004
+ERROR t=2810000: beat #8 data got 0003 expected 0006
+ERROR t=4110000: beat #13 data got 0005 expected 000a
+ERROR t=5390000: beat #20 data got 0004 expected 0008
+ERROR t=6670000: beat #26 data got 0004 expected 0008
+ERROR t=7950000: beat #32 data got 0004 expected 0008
+ERROR t=9270000: beat #38 data got 0006 expected 000c
+--------------------------------------------------
+chk fifo_4_2 : expected beats = 479, observed beats = 479
+RESULT chk fifo_4_2: FAIL (19 error(s))
+--------------------------------------------------
+$finish called at time : 51411 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_4_2.v" Line 145
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 21:50:17 2026...

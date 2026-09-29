@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 28 21:04:43 2026
+# Process ID: 10548
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_chk_fifo_3_3.log -mode tcl -source {xsim.dir/chk_fifo_3_3_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_chk_fifo_3_3.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/chk_fifo_3_3_snap/xsim_script.tcl
+# xsim {chk_fifo_3_3_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+chk fifo_3_3: err-free packets whole, eop-err packets dropped, non-eop err ignored
+ERROR t=390000: extra beat data=1002 sop=0 eop=1 - no packet word belongs here
+ERROR t=410000: extra beat data=1002 sop=0 eop=1 - no packet word belongs here
+ERROR t=430000: extra beat data=1002 sop=0 eop=1 - no packet word belongs here
+ERROR t=450000: extra beat data=1002 sop=0 eop=1 - no packet word belongs here
+ERROR t=470000: extra beat data=1002 sop=0 eop=1 - no packet word belongs here
+ERROR t=490000: extra beat data=1002 sop=0 eop=1 - no packet word belongs here
+ERROR t=510000: extra beat data=1002 sop=0 eop=1 - no packet word belongs here
+ERROR t=530000: extra beat data=1002 sop=0 eop=1 - no packet word belongs here
+--------------------------------------------------
+chk fifo_3_3 : expected beats = 45, observed beats = 673
+NOTE: expected (45) != observed (673)
+RESULT chk fifo_3_3: FAIL (670 error(s))
+--------------------------------------------------
+$finish called at time : 16551 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/chk_fifo_3_3.v" Line 95
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 21:04:47 2026...

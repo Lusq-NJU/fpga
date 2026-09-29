@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 00:20:48 2026
+# Process ID: 19432
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe2_fifo_5_1.log -mode tcl -source {xsim.dir/probe2_fifo_5_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe2_fifo_5_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe2_fifo_5_1_snap/xsim_script.tcl
+# xsim {probe2_fifo_5_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+t=210000 IN[vld=0 sop=0 eop=0 mty=00 din=00000000] r_pkg_id=00 id_wr=0 id_din=00 id_rd=0 id_dout=00 id_empty=1 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=230000 IN[vld=0 sop=0 eop=0 mty=00 din=00000000] r_pkg_id=00 id_wr=0 id_din=00 id_rd=0 id_dout=00 id_empty=1 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=250000 IN[vld=0 sop=0 eop=0 mty=00 din=00000000] r_pkg_id=00 id_wr=0 id_din=00 id_rd=0 id_dout=00 id_empty=1 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=270000 IN[vld=0 sop=0 eop=0 mty=00 din=00000000] r_pkg_id=00 id_wr=0 id_din=00 id_rd=0 id_dout=00 id_empty=1 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=290000 IN[vld=1 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=01 id_wr=1 id_din=01 id_rd=0 id_dout=00 id_empty=1 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=310000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=00 id_empty=1 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=330000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=00 id_empty=1 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=350000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=370000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=0 sop=0 eop=0 dout=00]
+t=390000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=1 eop=0 dout=55]
+t=410000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=0 dout=55]
+t=430000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=0 dout=55]
+t=450000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=0 dout=d5]
+t=470000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=0 dout=d5]
+t=490000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=1 dout=01]
+t=510000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=1 eop=1 dout=44]
+t=530000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=1 eop=0 dout=55]
+t=550000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=0 dout=55]
+t=570000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=0 dout=55]
+t=590000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=0 dout=fd]
+t=610000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=1 id_dout=01 id_empty=0 | OUT[vld=1 sop=0 eop=0 dout=fd]
+t=630000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=1 sop=0 eop=1 dout=01]
+t=650000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=670000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=690000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=710000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=730000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=750000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=770000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=790000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=810000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=830000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=850000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=870000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+t=890000 IN[vld=0 sop=1 eop=1 mty=11 din=44332211] r_pkg_id=02 id_wr=0 id_din=02 id_rd=0 id_dout=01 id_empty=1 | OUT[vld=0 sop=0 eop=1 dout=01]
+$finish called at time : 890 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe2_fifo_5_1.v" Line 32
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 30 00:20:52 2026...

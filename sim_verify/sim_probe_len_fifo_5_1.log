@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Sep 30 00:25:46 2026
+# Process ID: 20544
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_len_fifo_5_1.log -mode tcl -source {xsim.dir/probe_len_fifo_5_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_len_fifo_5_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_len_fifo_5_1_snap/xsim_script.tcl
+# xsim {probe_len_fifo_5_1_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+LEN 1000 bytes (250 words): model beats=1012, got 1012, packets out 1, divergences 0  PASS
+LEN 1001 bytes (251 words): model beats=1013, got 1013, packets out 1, divergences 0  PASS
+LEN 1500 bytes (375 words): model beats=1512, got 1512, packets out 1, divergences 0  PASS
+LEN 2048 bytes (512 words): model beats=2060, got 2060, packets out 1, divergences 0  PASS
+LEN 2049 bytes (513 words): model beats=2061, got 2061, packets out 1, divergences 0  PASS
+LEN 3000 bytes (750 words): model beats=3012, got 2062, packets out 0, divergences 0  FAIL
+$finish called at time : 511580 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_len_fifo_5_1.v" Line 92
+exit
+INFO: [Common 17-206] Exiting xsim at Wed Sep 30 00:25:51 2026...

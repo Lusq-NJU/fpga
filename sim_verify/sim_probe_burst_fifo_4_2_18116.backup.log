@@ -1,0 +1,49 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 21:52:10 2026
+# Process ID: 18116
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_burst_fifo_4_2.log -mode tcl -source {xsim.dir/probe_burst_fifo_4_2_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_burst_fifo_4_2.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_burst_fifo_4_2_snap/xsim_script.tcl
+# xsim {probe_burst_fifo_4_2_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+probe_burst fifo_4_2: back-to-back bursts, gap 0 (no back-pressure anywhere)
+--- short packets: who fills up first, header/checksum FIFOs or data FIFO
+burst of 20 abutting packets of 1 words (2 bytes): expected 60 beats, observed 42, errors 0 -> FAIL
+burst of 44 abutting packets of 1 words (2 bytes): expected 132 beats, observed 60, errors 0 -> FAIL
+burst of 48 abutting packets of 1 words (2 bytes): expected 144 beats, observed 63, errors 0 -> FAIL
+burst of 64 abutting packets of 1 words (2 bytes): expected 192 beats, observed 75, errors 0 -> FAIL
+--- packets at the use-case maximum, 125 words = 250 bytes
+   ERROR t=125390000: beat #5726 data got 150a expected 1508
+   ERROR t=125410000: beat #5727 data got 150b expected 1509
+   ERROR t=125430000: beat #5728 data got 150c expected 150a
+burst of 56 abutting packets of 125 words (250 bytes): expected 7112 beats, observed 6981, errors 1294 -> FAIL
+   ERROR t=268790000: beat #5726 data got 150a expected 1508
+   ERROR t=268810000: beat #5727 data got 150b expected 1509
+   ERROR t=268830000: beat #5728 data got 150c expected 150a
+burst of 60 abutting packets of 125 words (250 bytes): expected 7620 beats, observed 7477, errors 1806 -> FAIL
+   ERROR t=422190000: beat #5726 data got 150a expected 1508
+   ERROR t=422210000: beat #5727 data got 150b expected 1509
+   ERROR t=422230000: beat #5728 data got 150c expected 150a
+burst of 64 abutting packets of 125 words (250 bytes): expected 8128 beats, observed 7973, errors 2318 -> FAIL
+   ERROR t=585590000: beat #5726 data got 150a expected 1508
+   ERROR t=585610000: beat #5727 data got 150b expected 1509
+   ERROR t=585630000: beat #5728 data got 150c expected 150a
+burst of 70 abutting packets of 125 words (250 bytes): expected 8890 beats, observed 8717, errors 3086 -> FAIL
+   ERROR t=763990000: beat #5726 data got 150a expected 1508
+   ERROR t=764010000: beat #5727 data got 150b expected 1509
+   ERROR t=764030000: beat #5728 data got 150c expected 150a
+burst of 80 abutting packets of 125 words (250 bytes): expected 10160 beats, observed 9957, errors 4366 -> FAIL
+--------------------------------------------------
+probe_burst fifo_4_2: done
+--------------------------------------------------
+$finish called at time : 849291 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_burst_fifo_4_2.v" Line 102
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 21:52:13 2026...

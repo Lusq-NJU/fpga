@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 28 21:04:56 2026
+# Process ID: 3608
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_stress_fifo_3_3.log -mode tcl -source {xsim.dir/stress_fifo_3_3_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_stress_fifo_3_3.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/stress_fifo_3_3_snap/xsim_script.tcl
+# xsim {stress_fifo_3_3_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+stress fifo_3_3: 30 random packets, random err placement, random gaps
+ERROR t=6310000: extra beat data=0f19 sop=1 eop=0 - no packet word belongs here
+ERROR t=6330000: extra beat data=0f19 sop=1 eop=0 - no packet word belongs here
+ERROR t=6350000: extra beat data=0f19 sop=1 eop=0 - no packet word belongs here
+ERROR t=6370000: extra beat data=0f19 sop=1 eop=0 - no packet word belongs here
+ERROR t=6890000: beat #178 data got 1006 expected 100a
+ERROR t=6890000: beat #178 sop wrong
+ERROR t=6910000: beat #179 data got 1007 expected 100b
+ERROR t=6930000: beat #180 data got 1008 expected 100c
+--------------------------------------------------
+stress fifo_3_3 : expected beats = 378, observed beats = 762
+NOTE: expected (378) != observed (762)
+RESULT stress fifo_3_3: FAIL (643 error(s))
+--------------------------------------------------
+$finish called at time : 20431 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/stress_fifo_3_3.v" Line 93
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Sep 28 21:05:03 2026...

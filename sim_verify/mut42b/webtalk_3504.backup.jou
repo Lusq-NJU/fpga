@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 21:50:46 2026
+# Process ID: 3504
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/mut42b
+# Command line: wbtcv.exe -mode batch -source D:/coding/verilog/xc7k70t/project_fifo/sim_verify/mut42b/xsim.dir/stress_fifo_4_2_snap/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/mut42b/webtalk.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/mut42b\webtalk.jou
+#-----------------------------------------------------------
+source D:/coding/verilog/xc7k70t/project_fifo/sim_verify/mut42b/xsim.dir/stress_fifo_4_2_snap/webtalk/xsim_webtalk.tcl -notrace

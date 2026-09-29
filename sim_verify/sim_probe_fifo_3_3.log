@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 29 00:00:38 2026
+# Process ID: 4040
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify
+# Command line: xsim.exe -log sim_probe_fifo_3_3.log -mode tcl -source {xsim.dir/probe_fifo_3_3_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/sim_probe_fifo_3_3.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_fifo_3_3_snap/xsim_script.tcl
+# xsim {probe_fifo_3_3_snap} -autoloadwcfg -runall
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+run -all
+probe fifo_3_3: pkt1 good(3) | pkt2 err@eop(3) | pkt3 err@middle(3) | pkt4 good(2)
+  out beat 1: data=1000 sop=1 eop=0 (t=330000)
+  out beat 2: data=1001 sop=0 eop=0 (t=350000)
+  out beat 3: data=1002 sop=0 eop=1 (t=370000)
+  out beat 4: data=3000 sop=1 eop=0 (t=2050000)
+  out beat 5: data=3001 sop=0 eop=0 (t=2070000)
+  out beat 6: data=3002 sop=0 eop=1 (t=2090000)
+  out beat 7: data=4000 sop=1 eop=0 (t=2890000)
+  out beat 8: data=4001 sop=0 eop=1 (t=2910000)
+--------------------------------------------------
+probe fifo_3_3 : beats seen = 8
+  5 beats = pkt1+pkt4 clean and pkt2+pkt3 dropped (err only sampled at eop)
+  more   = spurious beats from a held FWFT dout / stale err mark
+--------------------------------------------------
+$finish called at time : 7611 ns : File "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_fifo_3_3.v" Line 55
+exit
+INFO: [Common 17-206] Exiting xsim at Tue Sep 29 00:00:40 2026...

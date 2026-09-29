@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# xsim v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Sep 28 23:57:53 2026
+# Process ID: 14936
+# Current directory: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/fixrun4
+# Command line: xsim.exe -log sim_probe_len_fifo_4_1.log -mode tcl -source {xsim.dir/probe_len_fifo_4_1_snap/xsim_script.tcl}
+# Log file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/fixrun4/sim_probe_len_fifo_4_1.log
+# Journal file: D:/coding/verilog/xc7k70t/project_fifo/sim_verify/fixrun4\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/probe_len_fifo_4_1_snap/xsim_script.tcl
+run -all

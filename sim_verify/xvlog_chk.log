@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/coding/verilog/xc7k70t/project_fifo/project_fifo.srcs/sources_1/new/fifo_4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_4_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/coding/verilog/xc7k70t/project_fifo/sim_verify/probe_burst_fifo_4_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module probe_burst_fifo_4_2
